@@ -17,6 +17,9 @@ whether the reproduction is behaviorally identical.
 | Task | Source repo | Language | Tests | Branches | Difficulty (xi) | Oracle acceptance |
 |---|---|---|---|---|---|---|
 | `mvdan--sh.0e8ea6f` | [mvdan/sh](https://github.com/mvdan/sh) (shfmt) @ 0e8ea6f | Go | 3,454 | 7 | medium (3.29) | **reward 1.0 / resolved 1.0** |
+| `benhoyt--goawk.5b11959` | [benhoyt/goawk](https://github.com/benhoyt/goawk) @ 5b11959 | Go | 2,144 | 7 | medium | **reward 1.0** |
+| `itchyny--gojq.2bef47f` | [itchyny/gojq](https://github.com/itchyny/gojq) @ 2bef47f | Go | 2,757 | 7 | medium | **reward 1.0** |
+| `knqyf263--pet.3661dc9` | [knqyf263/pet](https://github.com/knqyf263/pet) @ 3661dc9 | Go | 885 | 7 | medium | **reward 1.0** |
 
 Disjointness: tasks are verified against both ProgramBench-200 and the
 ProgramGym-1648 release (1,848 owner/repo pairs) — no overlap.
