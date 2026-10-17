@@ -1,0 +1,2746 @@
+{
+  "branches": {
+    "cli_flags_and_output": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_environment_export.test_config_options_and_user_variables"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_editor_resolution_order[overrides0-vi]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_editor_resolution_order[overrides1-/bin/ed]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_editor_resolution_order[overrides2-/bin/visual]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_lf_level_increments_per_nesting[5-6]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_lf_level_increments_per_nesting[None-1]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_lf_level_parse_edge_values[-3--2]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_lf_level_parse_edge_values[abc-1]"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_lf_variable_and_oldpwd_and_id"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_opener_pager_shell_defaults_and_passthrough"
+        },
+        {
+          "name": "eval.tests.test_environment_export.test_option_defaults_are_exported"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_command_flag.test_command_quit_exits_without_input",
+        "eval.tests.test_command_flag.test_empty_startup_command_is_a_silent_noop",
+        "eval.tests.test_command_flag.test_invalid_startup_command_is_reported_but_not_fatal",
+        "eval.tests.test_command_flag.test_repeated_command_flags_run_in_order",
+        "eval.tests.test_command_flag.test_startup_command_parse_error_is_reported_but_not_fatal",
+        "eval.tests.test_environment_export.test_config_options_and_user_variables",
+        "eval.tests.test_environment_export.test_editor_resolution_order[overrides0-vi]",
+        "eval.tests.test_environment_export.test_editor_resolution_order[overrides1-/bin/ed]",
+        "eval.tests.test_environment_export.test_editor_resolution_order[overrides2-/bin/visual]",
+        "eval.tests.test_environment_export.test_flag_variables_mirror_the_command_line",
+        "eval.tests.test_environment_export.test_lf_env_var_keeps_spaces_unquoted",
+        "eval.tests.test_environment_export.test_lf_level_increments_per_nesting[5-6]",
+        "eval.tests.test_environment_export.test_lf_level_increments_per_nesting[None-1]",
+        "eval.tests.test_environment_export.test_lf_level_parse_edge_values[-3--2]",
+        "eval.tests.test_environment_export.test_lf_level_parse_edge_values[abc-1]",
+        "eval.tests.test_environment_export.test_lf_variable_and_oldpwd_and_id",
+        "eval.tests.test_environment_export.test_oldpwd_is_the_startup_cwd_not_the_navigated_directory",
+        "eval.tests.test_environment_export.test_opener_pager_shell_defaults_and_passthrough",
+        "eval.tests.test_environment_export.test_option_defaults_are_exported",
+        "eval.tests.test_exit_output.test_both_output_flags_print_dir_then_selection",
+        "eval.tests.test_exit_output.test_carriage_return_paths_are_skipped_like_newlines",
+        "eval.tests.test_exit_output.test_control_characters_in_paths_depend_on_stdout_type",
+        "eval.tests.test_exit_output.test_invert_marks_every_entry_but_newline_names",
+        "eval.tests.test_exit_output.test_last_dir_path_file_has_no_trailing_newline_and_truncates",
+        "eval.tests.test_exit_output.test_last_dir_path_write_error_is_logged",
+        "eval.tests.test_exit_output.test_marked_files_are_printed_one_per_line",
+        "eval.tests.test_exit_output.test_opening_a_directory_does_not_confirm",
+        "eval.tests.test_exit_output.test_paths_containing_newlines_are_skipped",
+        "eval.tests.test_exit_output.test_print_last_dir_follows_navigation_up",
+        "eval.tests.test_exit_output.test_print_last_dir_reports_the_cwd_on_quit",
+        "eval.tests.test_exit_output.test_print_selection_prints_the_opened_file",
+        "eval.tests.test_exit_output.test_quitting_discards_the_selection_everywhere",
+        "eval.tests.test_exit_output.test_selection_newline_skip_is_logged_for_file_and_stdout",
+        "eval.tests.test_exit_output.test_selection_path_file_gets_newline_joined_paths",
+        "eval.tests.test_exit_output.test_selection_path_write_error_is_logged",
+        "eval.tests.test_exit_output.test_terminal_sanitization_covers_del_and_c1_not_printable_unicode[accent]",
+        "eval.tests.test_exit_output.test_terminal_sanitization_covers_del_and_c1_not_printable_unicode[c1-control]",
+        "eval.tests.test_exit_output.test_terminal_sanitization_covers_del_and_c1_not_printable_unicode[del]",
+        "eval.tests.test_exit_output.test_termination_signal_skips_all_exit_output",
+        "eval.tests.test_flag_syntax.test_boolean_value_forms_are_accepted[1]",
+        "eval.tests.test_flag_syntax.test_boolean_value_forms_are_accepted[TRUE]",
+        "eval.tests.test_flag_syntax.test_boolean_value_forms_are_accepted[t]",
+        "eval.tests.test_flag_syntax.test_dash_h_is_not_a_registered_boolean_flag",
+        "eval.tests.test_flag_syntax.test_double_dash_prefix_is_accepted",
+        "eval.tests.test_flag_syntax.test_double_dash_terminator_treats_flaglike_name_as_path",
+        "eval.tests.test_flag_syntax.test_empty_remote_value_falls_through_to_the_client",
+        "eval.tests.test_flag_syntax.test_false_boolean_form_starts_the_client",
+        "eval.tests.test_flag_syntax.test_flags_after_the_positional_argument_are_not_parsed",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_for_output_and_server_flags[-print-last-dir]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_for_output_and_server_flags[-print-selection]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_for_output_and_server_flags[-server]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_is_rejected[-doc]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_is_rejected[-help]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_is_rejected[-single]",
+        "eval.tests.test_flag_syntax.test_invalid_boolean_value_is_rejected[-version]",
+        "eval.tests.test_flag_syntax.test_missing_flag_value_is_an_error[-command]",
+        "eval.tests.test_flag_syntax.test_missing_flag_value_is_an_error[-config]",
+        "eval.tests.test_flag_syntax.test_missing_flag_value_is_an_error[-log]",
+        "eval.tests.test_flag_syntax.test_missing_flag_value_is_an_error[-remote]",
+        "eval.tests.test_flag_syntax.test_missing_flag_value_is_an_error[-selection-path]",
+        "eval.tests.test_flag_syntax.test_missing_value_for_path_and_profile_flags[-cpuprofile]",
+        "eval.tests.test_flag_syntax.test_missing_value_for_path_and_profile_flags[-last-dir-path]",
+        "eval.tests.test_flag_syntax.test_missing_value_for_path_and_profile_flags[-memprofile]",
+        "eval.tests.test_flag_syntax.test_unknown_flag_prints_error_and_usage[--nope--nope]",
+        "eval.tests.test_flag_syntax.test_unknown_flag_prints_error_and_usage[-DOC--DOC]",
+        "eval.tests.test_flag_syntax.test_unknown_flag_prints_error_and_usage[-frobnicate--frobnicate]",
+        "eval.tests.test_flag_value_semantics.test_command_consumes_a_flaglike_value[-version]",
+        "eval.tests.test_flag_value_semantics.test_command_consumes_a_flaglike_value[]",
+        "eval.tests.test_flag_value_semantics.test_command_flag_accepts_the_equals_spelling",
+        "eval.tests.test_flag_value_semantics.test_empty_config_value_uses_the_default_config_paths",
+        "eval.tests.test_flag_value_semantics.test_empty_last_dir_path_value_writes_no_file",
+        "eval.tests.test_flag_value_semantics.test_empty_log_value_is_not_a_log_path",
+        "eval.tests.test_flag_value_semantics.test_empty_remote_value_via_equals_starts_the_client",
+        "eval.tests.test_flag_value_semantics.test_empty_selection_path_value_writes_no_file",
+        "eval.tests.test_flag_value_semantics.test_h_is_handled_during_parsing_before_the_meta_dispatch[meta0]",
+        "eval.tests.test_flag_value_semantics.test_h_is_handled_during_parsing_before_the_meta_dispatch[meta1]",
+        "eval.tests.test_flag_value_semantics.test_lf_env_var_resolves_the_symlink_to_the_real_binary",
+        "eval.tests.test_flag_value_semantics.test_repeated_log_flag_keeps_only_the_last_value",
+        "eval.tests.test_flag_value_semantics.test_usage_header_shows_argv0_verbatim",
+        "eval.tests.test_help_version_doc.test_doc_head_and_tail_anchors",
+        "eval.tests.test_help_version_doc.test_doc_prints_the_embedded_manual_exactly",
+        "eval.tests.test_help_version_doc.test_doc_section_headers_appear_in_order",
+        "eval.tests.test_help_version_doc.test_doc_wins_over_help_version_and_remote",
+        "eval.tests.test_help_version_doc.test_doc_wins_over_server",
+        "eval.tests.test_help_version_doc.test_h_help_and_help_true_print_identical_usage",
+        "eval.tests.test_help_version_doc.test_help_prints_the_exact_usage_block",
+        "eval.tests.test_help_version_doc.test_help_wins_over_version",
+        "eval.tests.test_help_version_doc.test_remote_without_a_server_is_fatal",
+        "eval.tests.test_help_version_doc.test_usage_lists_the_registered_flags_in_order",
+        "eval.tests.test_help_version_doc.test_version_prints_the_release_tag",
+        "eval.tests.test_help_version_doc.test_version_wins_over_remote_server_and_arguments[args0]",
+        "eval.tests.test_help_version_doc.test_version_wins_over_remote_server_and_arguments[args1]",
+        "eval.tests.test_log_and_diagnostics.test_clean_session_log_has_only_the_two_banners",
+        "eval.tests.test_log_and_diagnostics.test_headless_client_fails_silently",
+        "eval.tests.test_log_and_diagnostics.test_lf_level_parse_failure_goes_to_stderr_not_the_log",
+        "eval.tests.test_log_and_diagnostics.test_log_is_appended_across_runs",
+        "eval.tests.test_log_and_diagnostics.test_log_records_the_screen_failure",
+        "eval.tests.test_log_and_diagnostics.test_relative_log_path_resolves_against_the_cwd",
+        "eval.tests.test_log_and_diagnostics.test_unopenable_log_path_is_fatal[a-dir-is a directory]",
+        "eval.tests.test_log_and_diagnostics.test_unopenable_log_path_is_fatal[missing-dir/x.log-no such file or directory]",
+        "eval.tests.test_log_and_diagnostics.test_unreadable_history_file_is_reported_but_not_fatal",
+        "eval.tests.test_log_and_diagnostics.test_unresolvable_cwd_with_relative_log_is_fatal",
+        "eval.tests.test_positional_arguments.test_directory_argument_starts_inside_it",
+        "eval.tests.test_positional_arguments.test_dot_dotdot_and_trailing_slash_dir_operands[.-False-False]",
+        "eval.tests.test_positional_arguments.test_dot_dotdot_and_trailing_slash_dir_operands[..-True-False]",
+        "eval.tests.test_positional_arguments.test_dot_dotdot_and_trailing_slash_dir_operands[sub/-False-True]",
+        "eval.tests.test_positional_arguments.test_empty_operand_behaves_like_no_operand",
+        "eval.tests.test_positional_arguments.test_file_argument_reports_the_parent_as_last_dir",
+        "eval.tests.test_positional_arguments.test_file_argument_selects_the_file_in_its_parent",
+        "eval.tests.test_positional_arguments.test_more_than_one_positional_argument_is_rejected[args0]",
+        "eval.tests.test_positional_arguments.test_nonexistent_argument_falls_back_to_the_cwd",
+        "eval.tests.test_positional_arguments.test_symlink_to_directory_operand_selects_it_instead_of_entering",
+        "eval.tests.test_positional_arguments.test_trailing_slash_on_a_file_operand_is_an_lstat_error",
+        "eval.tests.test_positional_arguments.test_unresolvable_cwd_with_directory_argument_exits_1",
+        "eval.tests.test_positional_arguments.test_unresolvable_cwd_without_arguments_exits_2",
+        "eval.tests.test_profile_flags.test_headless_client_leaves_cpu_profile_empty",
+        "eval.tests.test_profile_flags.test_headless_client_never_writes_mem_profile",
+        "eval.tests.test_profile_flags.test_help_and_version_profile_flags_do_not_change_the_meta_output",
+        "eval.tests.test_profile_flags.test_meta_flag_writes_cpu_profile[meta_args0]",
+        "eval.tests.test_profile_flags.test_meta_flag_writes_cpu_profile[meta_args1]",
+        "eval.tests.test_profile_flags.test_meta_flag_writes_cpu_profile[meta_args2]",
+        "eval.tests.test_profile_flags.test_meta_flag_writes_mem_profile[meta_args0]",
+        "eval.tests.test_profile_flags.test_meta_flag_writes_mem_profile[meta_args1]",
+        "eval.tests.test_profile_flags.test_unopenable_cpuprofile_is_fatal_before_any_output",
+        "eval.tests.test_profile_flags.test_unopenable_memprofile_is_fatal_after_the_meta_output",
+        "eval.tests.test_remote_client_protocol.test_remote_prints_an_unterminated_response_without_adding_a_newline",
+        "eval.tests.test_remote_client_protocol.test_remote_sanitizes_the_response_when_stdout_is_a_terminal",
+        "eval.tests.test_remote_client_protocol.test_remote_sends_one_line_and_prints_the_response_verbatim",
+        "eval.tests.test_remote_client_protocol.test_remote_with_an_empty_response_prints_nothing",
+        "eval.tests.test_shell_integration.test_lfcd_changes_the_shell_cwd_to_the_last_dir",
+        "eval.tests.test_shell_integration.test_lfcd_passes_arguments_through_to_lf",
+        "eval.tests.test_signals.test_client_survives_sigint_and_still_prints_the_last_dir",
+        "eval.tests.test_signals.test_sigint_is_ignored_by_the_client",
+        "eval.tests.test_signals.test_termination_signals_exit_with_code_3[15]",
+        "eval.tests.test_signals.test_termination_signals_exit_with_code_3[1]",
+        "eval.tests.test_signals.test_termination_signals_exit_with_code_3[3]",
+        "eval.tests.test_startup_and_path_files.test_client_starts_with_an_unusual_term[]",
+        "eval.tests.test_startup_and_path_files.test_client_starts_with_an_unusual_term[lf-not-a-term]",
+        "eval.tests.test_startup_and_path_files.test_lf_flag_config_mirrors_the_value_verbatim",
+        "eval.tests.test_startup_and_path_files.test_log_file_is_created_owner_read_write_only",
+        "eval.tests.test_startup_and_path_files.test_meta_flags_never_open_the_log_file[-doc]",
+        "eval.tests.test_startup_and_path_files.test_meta_flags_never_open_the_log_file[-help]",
+        "eval.tests.test_startup_and_path_files.test_meta_flags_never_open_the_log_file[-version]",
+        "eval.tests.test_startup_and_path_files.test_missing_config_file_is_logged_but_not_fatal",
+        "eval.tests.test_startup_and_path_files.test_relative_cpuprofile_resolves_against_the_cwd",
+        "eval.tests.test_startup_and_path_files.test_shared_path_file_ends_up_holding_the_selection",
+        "eval.tests.test_startup_and_path_files.test_startup_open_command_confirms_nothing",
+        "eval.tests.test_startup_and_path_files.test_startup_open_command_does_not_navigate"
+      ]
+    },
+    "server_and_remote": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_client_lifecycle.test_client_killed_by_signal_exits_three"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_client_registers_with_its_pid"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_client_sends_drop_when_it_quits"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_graceful_quit_keeps_connected_clients"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_list_is_sorted_by_id"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_noautoquit_keeps_server_alive"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_selection_change_is_broadcast_to_all_clients"
+        },
+        {
+          "name": "eval.tests.test_client_lifecycle.test_server_survives_while_another_client_remains"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_command_flag_runs_commands_at_init"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_last_dir_path_and_print_last_dir_on_quit"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_print_last_dir_sanitizes_control_bytes_on_a_terminal"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_selection_path_and_print_selection_on_open"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_selection_skips_paths_containing_newlines"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_single_client_is_invisible_to_a_running_server"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_unreadable_history_file_is_reported_in_the_log"
+        },
+        {
+          "name": "eval.tests.test_client_startup.test_unwritable_output_paths_are_logged_not_fatal"
+        },
+        {
+          "name": "eval.tests.test_protocol_errors.test_protocol_errors_are_logged"
+        },
+        {
+          "name": "eval.tests.test_protocol_errors.test_send_broadcast_to_dead_connection"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_cmaps_lists_command_mode_bindings"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_cmds_lists_user_commands"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_files_lists_current_directory"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_history_records_read_commands"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_jumps_lists_navigation_history"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_maps_reports_merged_keybindings"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_mode_specific_maps"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_state_exists_only_after_a_shell_command_ran"
+        },
+        {
+          "name": "eval.tests.test_remote_query.test_query_state_updates_only_when_a_shell_command_runs"
+        },
+        {
+          "name": "eval.tests.test_remote_send.test_targeted_send_set_statement_is_evaluated"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_client_repairs_a_stale_socket"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_client_reuses_a_live_server"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_server_exits_zero_on_force_quit"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_server_log_is_appended"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_server_logs_every_received_command"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_server_writes_start_line_to_log"
+        },
+        {
+          "name": "eval.tests.test_server_mode.test_socket_permissions"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_client_lifecycle.test_autoquit_stops_server_with_last_client",
+        "eval.tests.test_client_lifecycle.test_client_killed_by_signal_exits_three",
+        "eval.tests.test_client_lifecycle.test_client_registers_with_its_pid",
+        "eval.tests.test_client_lifecycle.test_client_sends_drop_when_it_quits",
+        "eval.tests.test_client_lifecycle.test_drop_command_disconnects_a_client",
+        "eval.tests.test_client_lifecycle.test_force_quit_notifies_and_disconnects_clients",
+        "eval.tests.test_client_lifecycle.test_graceful_quit_keeps_connected_clients",
+        "eval.tests.test_client_lifecycle.test_list_is_sorted_by_id",
+        "eval.tests.test_client_lifecycle.test_list_output_format",
+        "eval.tests.test_client_lifecycle.test_noautoquit_keeps_server_alive",
+        "eval.tests.test_client_lifecycle.test_selection_change_is_broadcast_to_all_clients",
+        "eval.tests.test_client_lifecycle.test_server_survives_while_another_client_remains",
+        "eval.tests.test_client_startup.test_client_log_path_that_cannot_be_opened_is_fatal",
+        "eval.tests.test_client_startup.test_client_without_a_controlling_terminal_fails_to_start",
+        "eval.tests.test_client_startup.test_command_flag_runs_commands_at_init",
+        "eval.tests.test_client_startup.test_invalid_lf_level_is_reported_on_stderr",
+        "eval.tests.test_client_startup.test_last_dir_path_and_print_last_dir_on_quit",
+        "eval.tests.test_client_startup.test_last_dir_with_a_newline_in_the_name_is_skipped",
+        "eval.tests.test_client_startup.test_print_last_dir_sanitizes_control_bytes_on_a_terminal",
+        "eval.tests.test_client_startup.test_quit_drops_dead_connections_and_shuts_down",
+        "eval.tests.test_client_startup.test_selection_path_and_print_selection_on_open",
+        "eval.tests.test_client_startup.test_selection_skips_paths_containing_newlines",
+        "eval.tests.test_client_startup.test_single_client_is_invisible_to_a_running_server",
+        "eval.tests.test_client_startup.test_single_mode_starts_no_server",
+        "eval.tests.test_client_startup.test_unreadable_history_file_is_reported_in_the_log",
+        "eval.tests.test_client_startup.test_unwritable_output_paths_are_logged_not_fatal",
+        "eval.tests.test_protocol_errors.test_drop_of_unknown_id_is_silent",
+        "eval.tests.test_protocol_errors.test_empty_command_is_not_a_remote_call",
+        "eval.tests.test_protocol_errors.test_leading_whitespace_is_stripped",
+        "eval.tests.test_protocol_errors.test_list_tolerates_trailing_arguments",
+        "eval.tests.test_protocol_errors.test_only_the_first_word_is_reported",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[conn 12x-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[conn 99999999999999999999-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[conn abc-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[conn-listen: conn: requires a client ID\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[drop 99999999999999999999-listen: drop: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[drop abc-listen: drop: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[drop-listen: drop: requires a client ID\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[query 1 maps-listen: query: no client with ID 1 connected\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[query 99999999999999999999 x-listen: query: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[query abc-listen: query: client ID must be a number\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[query-listen: query: requires a client ID\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_error_messages[send 1 echo-listen: send: no client with ID 1 connected\\n]",
+        "eval.tests.test_protocol_errors.test_protocol_errors_are_logged",
+        "eval.tests.test_protocol_errors.test_remote_error_output_is_not_on_stderr",
+        "eval.tests.test_protocol_errors.test_send_broadcast_to_dead_connection",
+        "eval.tests.test_protocol_errors.test_send_without_arguments_is_silent",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[LIST]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[SeNd]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[Send]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[connx]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[hello]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[listen]",
+        "eval.tests.test_protocol_errors.test_unknown_first_word[quit-extra]",
+        "eval.tests.test_remote_query.test_query_cmaps_lists_command_mode_bindings",
+        "eval.tests.test_remote_query.test_query_cmds_lists_user_commands",
+        "eval.tests.test_remote_query.test_query_files_lists_current_directory",
+        "eval.tests.test_remote_query.test_query_history_records_read_commands",
+        "eval.tests.test_remote_query.test_query_jumps_lists_navigation_history",
+        "eval.tests.test_remote_query.test_query_maps_reports_merged_keybindings",
+        "eval.tests.test_remote_query.test_query_mode_specific_maps",
+        "eval.tests.test_remote_query.test_query_sanitizes_control_bytes_only_on_a_terminal",
+        "eval.tests.test_remote_query.test_query_state_exists_only_after_a_shell_command_ran",
+        "eval.tests.test_remote_query.test_query_state_updates_only_when_a_shell_command_runs",
+        "eval.tests.test_remote_send.test_broadcast_send_runs_a_user_command_on_every_client",
+        "eval.tests.test_remote_send.test_targeted_send_invokes_a_user_command",
+        "eval.tests.test_remote_send.test_targeted_send_map_statement_defines_a_binding",
+        "eval.tests.test_remote_send.test_targeted_send_quit_exits_only_that_client",
+        "eval.tests.test_remote_send.test_targeted_send_runs_a_builtin_command_on_one_client",
+        "eval.tests.test_remote_send.test_targeted_send_set_statement_is_evaluated",
+        "eval.tests.test_remote_without_server.test_remote_after_server_quit",
+        "eval.tests.test_remote_without_server.test_remote_against_plain_file_socket",
+        "eval.tests.test_remote_without_server.test_remote_against_stale_socket",
+        "eval.tests.test_remote_without_server.test_remote_empty_argument_starts_a_client",
+        "eval.tests.test_remote_without_server.test_remote_ignores_log_flag",
+        "eval.tests.test_remote_without_server.test_remote_list_without_socket",
+        "eval.tests.test_remote_without_server.test_remote_quit_without_socket",
+        "eval.tests.test_remote_without_server.test_remote_send_without_socket",
+        "eval.tests.test_server_mode.test_client_repairs_a_stale_socket",
+        "eval.tests.test_server_mode.test_client_reuses_a_live_server",
+        "eval.tests.test_server_mode.test_client_run_spawns_a_detached_server",
+        "eval.tests.test_server_mode.test_second_server_cannot_bind",
+        "eval.tests.test_server_mode.test_server_bad_log_path",
+        "eval.tests.test_server_mode.test_server_creates_socket",
+        "eval.tests.test_server_mode.test_server_exits_zero_on_force_quit",
+        "eval.tests.test_server_mode.test_server_log_is_appended",
+        "eval.tests.test_server_mode.test_server_logs_every_received_command",
+        "eval.tests.test_server_mode.test_server_unlinks_socket_on_quit",
+        "eval.tests.test_server_mode.test_server_without_xdg_runtime_dir",
+        "eval.tests.test_server_mode.test_server_writes_start_line_to_log",
+        "eval.tests.test_server_mode.test_socket_permissions"
+      ]
+    },
+    "config_files_and_options": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_discovery.test_command_flags_evaluated_in_order"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_command_flags_run_after_config_file"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_config_flag_missing_file_only_logged"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_config_flag_replaces_search"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_lf_config_home_empty_falls_back_to_xdg"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_lf_config_home_overrides_xdg"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_lf_config_home_redirects_colors_and_icons"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_lfrc_error_survives_into_session"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_missing_default_files_silently_ignored"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_source_expands_the_os_user_home"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_source_missing_file_is_an_error_but_not_fatal"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_source_nests_and_surfaces_inner_errors"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_source_reads_an_extra_config_file"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_source_relative_and_missing_argument"
+        },
+        {
+          "name": "eval.tests.test_discovery.test_xdg_config_home_lfrc_is_read"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_and_unknown_option_errors"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_error_does_not_block_later_set"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_explicit_true_and_false_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_forms"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_option_registry_sweep"
+        },
+        {
+          "name": "eval.tests.test_options.test_bool_value_forms_rejected"
+        },
+        {
+          "name": "eval.tests.test_options.test_borderstyle_accepts_every_documented_value"
+        },
+        {
+          "name": "eval.tests.test_options.test_deprecated_options_still_report"
+        },
+        {
+          "name": "eval.tests.test_options.test_enum_options_accept_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_enum_options_reject_bad_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_filesep_colon_quirk"
+        },
+        {
+          "name": "eval.tests.test_options.test_format_string_options_accept_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_int_bounds_and_parse_errors"
+        },
+        {
+          "name": "eval.tests.test_options.test_int_option_parse_and_range_errors"
+        },
+        {
+          "name": "eval.tests.test_options.test_int_options_accept_valid_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_int_options_reject_bad_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_int_overflow_message"
+        },
+        {
+          "name": "eval.tests.test_options.test_list_options_accept_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_list_options_cleared_by_empty_set"
+        },
+        {
+          "name": "eval.tests.test_options.test_list_options_reject_bad_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_option_defaults"
+        },
+        {
+          "name": "eval.tests.test_options.test_path_options_expand_the_os_user_home"
+        },
+        {
+          "name": "eval.tests.test_options.test_ratios_and_preview_interplay"
+        },
+        {
+          "name": "eval.tests.test_options.test_ratios_single_rejected_while_preview_on"
+        },
+        {
+          "name": "eval.tests.test_options.test_shell_and_shellflag_options"
+        },
+        {
+          "name": "eval.tests.test_options.test_string_options_accept_values"
+        },
+        {
+          "name": "eval.tests.test_options.test_terminalcursor_accepts_every_documented_style"
+        },
+        {
+          "name": "eval.tests.test_options.test_truncatechar_single_character_rule"
+        },
+        {
+          "name": "eval.tests.test_options.test_user_option_set_via_command_flag"
+        },
+        {
+          "name": "eval.tests.test_options.test_user_options"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_bindings.TestBindingTable.test_clearmaps_removes_all_but_the_colon_binding",
+        "eval.tests.test_bindings.TestBindingTable.test_function_and_alt_key_syntax",
+        "eval.tests.test_bindings.TestBindingTable.test_map_rebinding_keeps_the_last_expression",
+        "eval.tests.test_bindings.TestBindingTable.test_map_without_expression_deletes_the_binding",
+        "eval.tests.test_bindings.TestBindingTable.test_multiline_key_sequence_waits_for_the_tail",
+        "eval.tests.test_bindings.TestBindingTable.test_nmap_without_expression_deletes_a_default_binding",
+        "eval.tests.test_bindings.TestCommandMode.test_cmap_binds_keys_of_the_command_line",
+        "eval.tests.test_bindings.TestCommandMode.test_cmap_ignores_plain_rune_keys",
+        "eval.tests.test_bindings.TestCommandMode.test_cmap_is_not_visible_in_normal_mode",
+        "eval.tests.test_bindings.TestCommandMode.test_cmap_without_expression_deletes_the_binding",
+        "eval.tests.test_bindings.TestModeScoping.test_map_binds_normal_and_visual_mode",
+        "eval.tests.test_bindings.TestModeScoping.test_nmap_binds_normal_mode_only",
+        "eval.tests.test_bindings.TestModeScoping.test_vmap_binds_visual_mode_only",
+        "eval.tests.test_bindings.TestModeScoping.test_vmap_without_expression_deletes_the_binding",
+        "eval.tests.test_bindings.TestUserCommands.test_cmd_define_invoke_and_redefine",
+        "eval.tests.test_bindings.TestUserCommands.test_cmd_invoked_through_a_binding",
+        "eval.tests.test_bindings.TestUserCommands.test_cmd_without_expression_deletes_the_command",
+        "eval.tests.test_discovery.test_command_flags_evaluated_in_order",
+        "eval.tests.test_discovery.test_command_flags_run_after_config_file",
+        "eval.tests.test_discovery.test_config_flag_missing_file_only_logged",
+        "eval.tests.test_discovery.test_config_flag_replaces_search",
+        "eval.tests.test_discovery.test_lf_config_home_empty_falls_back_to_xdg",
+        "eval.tests.test_discovery.test_lf_config_home_overrides_xdg",
+        "eval.tests.test_discovery.test_lf_config_home_redirects_colors_and_icons",
+        "eval.tests.test_discovery.test_lfrc_error_survives_into_session",
+        "eval.tests.test_discovery.test_missing_default_files_silently_ignored",
+        "eval.tests.test_discovery.test_source_expands_the_os_user_home",
+        "eval.tests.test_discovery.test_source_missing_file_is_an_error_but_not_fatal",
+        "eval.tests.test_discovery.test_source_nests_and_surfaces_inner_errors",
+        "eval.tests.test_discovery.test_source_reads_an_extra_config_file",
+        "eval.tests.test_discovery.test_source_relative_and_missing_argument",
+        "eval.tests.test_discovery.test_xdg_config_home_lfrc_is_read",
+        "eval.tests.test_hooks.TestDirectoryHooks.test_on_init_runs_only_with_a_server",
+        "eval.tests.test_hooks.TestDirectoryHooks.test_on_quit_runs_when_quitting_with_q",
+        "eval.tests.test_hooks.TestDirectoryHooks.test_on_select_and_on_load_fire",
+        "eval.tests.test_hooks.TestDirectoryHooks.test_pre_cd_and_on_cd_run_around_each_change",
+        "eval.tests.test_hooks.TestFocus.test_focus_reporting_follows_the_on_focus_commands",
+        "eval.tests.test_options.test_bool_and_unknown_option_errors",
+        "eval.tests.test_options.test_bool_error_does_not_block_later_set",
+        "eval.tests.test_options.test_bool_explicit_true_and_false_values",
+        "eval.tests.test_options.test_bool_forms",
+        "eval.tests.test_options.test_bool_option_registry_sweep",
+        "eval.tests.test_options.test_bool_value_forms_rejected",
+        "eval.tests.test_options.test_borderstyle_accepts_every_documented_value",
+        "eval.tests.test_options.test_deprecated_options_still_report",
+        "eval.tests.test_options.test_enum_options_accept_values",
+        "eval.tests.test_options.test_enum_options_reject_bad_values",
+        "eval.tests.test_options.test_filesep_colon_quirk",
+        "eval.tests.test_options.test_format_string_options_accept_values",
+        "eval.tests.test_options.test_int_bounds_and_parse_errors",
+        "eval.tests.test_options.test_int_option_parse_and_range_errors",
+        "eval.tests.test_options.test_int_options_accept_valid_values",
+        "eval.tests.test_options.test_int_options_reject_bad_values",
+        "eval.tests.test_options.test_int_overflow_message",
+        "eval.tests.test_options.test_list_options_accept_values",
+        "eval.tests.test_options.test_list_options_cleared_by_empty_set",
+        "eval.tests.test_options.test_list_options_reject_bad_values",
+        "eval.tests.test_options.test_option_defaults",
+        "eval.tests.test_options.test_path_options_expand_the_os_user_home",
+        "eval.tests.test_options.test_ratios_and_preview_interplay",
+        "eval.tests.test_options.test_ratios_single_rejected_while_preview_on",
+        "eval.tests.test_options.test_shell_and_shellflag_options",
+        "eval.tests.test_options.test_string_options_accept_values",
+        "eval.tests.test_options.test_terminalcursor_accepts_every_documented_style",
+        "eval.tests.test_options.test_truncatechar_single_character_rule",
+        "eval.tests.test_options.test_user_option_set_via_command_flag",
+        "eval.tests.test_options.test_user_options",
+        "eval.tests.test_refresh.TestPeriod.test_period_option_polls_the_directory",
+        "eval.tests.test_refresh.TestPeriod.test_period_zero_stops_polling",
+        "eval.tests.test_refresh.TestWatch.test_nowatch_stops_refreshing_after_watch_was_enabled",
+        "eval.tests.test_refresh.TestWatch.test_watch_option_refreshes_the_listing",
+        "eval.tests.test_setlocal.TestBools.test_local_bool_overrides_a_global_set",
+        "eval.tests.test_setlocal.TestBools.test_local_bool_toggle_starts_from_the_global_value",
+        "eval.tests.test_setlocal.TestBools.test_local_bool_value_forms_rejected",
+        "eval.tests.test_setlocal.TestBools.test_local_unknown_option_is_rejected",
+        "eval.tests.test_setlocal.TestDirCounts.test_local_dircounts_negated_restores_the_placeholder",
+        "eval.tests.test_setlocal.TestDirCounts.test_local_dircounts_shows_entry_counts_in_the_matching_directory",
+        "eval.tests.test_setlocal.TestInfo.test_local_info_cleared_by_an_empty_value",
+        "eval.tests.test_setlocal.TestInfo.test_local_info_size_only_in_the_matching_directory",
+        "eval.tests.test_setlocal.TestInfo.test_local_invalid_info_and_sortby_values",
+        "eval.tests.test_setlocal.TestPaths.test_local_directory_is_made_absolute",
+        "eval.tests.test_setlocal.TestPaths.test_local_hidden_only_in_the_matching_directory",
+        "eval.tests.test_setlocal.TestPaths.test_local_tilde_is_not_the_home_environment_variable",
+        "eval.tests.test_setlocal.TestSorting.test_local_dirfirst_and_dironly",
+        "eval.tests.test_setlocal.TestSorting.test_local_sortby_name_and_reverse",
+        "eval.tests.test_setlocal.TestSorting.test_local_sortignorecase",
+        "eval.tests.test_setlocal.TestSorting.test_local_sortignoredia",
+        "eval.tests.test_syntax.TestColonGroups.test_colon_braces_multiline",
+        "eval.tests.test_syntax.TestColonGroups.test_colon_braces_one_line_is_broken",
+        "eval.tests.test_syntax.TestColonGroups.test_colon_group_multiline",
+        "eval.tests.test_syntax.TestColonGroups.test_colon_group_one_line",
+        "eval.tests.test_syntax.TestColonGroups.test_unclosed_braces_silent",
+        "eval.tests.test_syntax.TestComments.test_comment_starts_mid_token",
+        "eval.tests.test_syntax.TestComments.test_full_line_comment_ignored",
+        "eval.tests.test_syntax.TestComments.test_hash_inside_quotes_is_literal",
+        "eval.tests.test_syntax.TestComments.test_trailing_comment_stripped",
+        "eval.tests.test_syntax.TestParseErrors.test_bare_closing_braces",
+        "eval.tests.test_syntax.TestParseErrors.test_bare_colon",
+        "eval.tests.test_syntax.TestParseErrors.test_bare_semicolon",
+        "eval.tests.test_syntax.TestParseErrors.test_bare_set",
+        "eval.tests.test_syntax.TestParseErrors.test_colon_then_semicolon",
+        "eval.tests.test_syntax.TestParseErrors.test_double_prefix",
+        "eval.tests.test_syntax.TestParseErrors.test_map_without_keys_is_harmless",
+        "eval.tests.test_syntax.TestParseErrors.test_setlocal_missing_directory",
+        "eval.tests.test_syntax.TestParseErrors.test_setlocal_missing_option",
+        "eval.tests.test_syntax.TestParseErrors.test_unknown_command",
+        "eval.tests.test_syntax.TestPushKeyMode.test_push_colon_opens_prompt",
+        "eval.tests.test_syntax.TestPushKeyMode.test_push_hash_is_not_comment",
+        "eval.tests.test_syntax.TestPushKeyMode.test_push_mapped_control_key",
+        "eval.tests.test_syntax.TestPushKeyMode.test_push_rejects_extra_arguments",
+        "eval.tests.test_syntax.TestQuoting.test_double_quote_escaped_quote",
+        "eval.tests.test_syntax.TestQuoting.test_double_quote_newline_escape",
+        "eval.tests.test_syntax.TestQuoting.test_double_quote_octal_escape",
+        "eval.tests.test_syntax.TestQuoting.test_double_quote_tab_escape",
+        "eval.tests.test_syntax.TestQuoting.test_double_quote_unknown_escape_kept",
+        "eval.tests.test_syntax.TestQuoting.test_empty_quoted_value",
+        "eval.tests.test_syntax.TestQuoting.test_percent_is_prefix_token_in_values",
+        "eval.tests.test_syntax.TestQuoting.test_single_quotes_no_escape_processing",
+        "eval.tests.test_syntax.TestQuoting.test_single_quotes_preserve_spaces",
+        "eval.tests.test_syntax.TestQuoting.test_unquoted_backslash_semicolon",
+        "eval.tests.test_syntax.TestQuoting.test_unquoted_backslash_space",
+        "eval.tests.test_syntax.TestSeparators.test_crlf_line_endings",
+        "eval.tests.test_syntax.TestSeparators.test_missing_trailing_newline",
+        "eval.tests.test_syntax.TestSeparators.test_tab_whitespace",
+        "eval.tests.test_syntax.TestSeparators.test_two_statements_one_line"
+      ]
+    },
+    "command_language_and_shell": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_set_options.test_set_user_option_exports_env"
+        },
+        {
+          "name": "eval.tests.test_zz_probe.test_probe_copy_newline_name"
+        },
+        {
+          "name": "eval.tests.test_zz_probe.test_probe_dircounts"
+        },
+        {
+          "name": "eval.tests.test_zz_probe.test_probe_fifo_copy_quit"
+        },
+        {
+          "name": "eval.tests.test_zz_probe.test_probe_watch_delete_selection"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_cd_dash_swaps_with_previous",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_cd_dash_without_previous",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_cd_errors",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_command_arguments_are_not_counts",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_draw_and_redraw_are_silent",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echo]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echoerr]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echomsg]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_echo_quoted_argument",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_empty_command_line_stays_open",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_half_and_page_movement",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_push_moves_cursor",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_push_special_keys_literal",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_reload_and_load_refresh_listing",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_top_bottom_and_counted_jumps",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_tty_write_goes_to_the_terminal",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_typed_counts_and_clamping",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_builtin_commands.test_unknown_command_error",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_backspace_edits_and_eats_prefix",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_case_operations",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_ctrl_g_keeps_prompt",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_ctrl_h_is_backspace",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_ctrl_k_kills_to_end",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_ctrl_u_noop_at_home",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_delete_key_forward",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_delete_word_and_yank_back",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_escape_and_interrupt_close_prompt",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_home_end_and_insert",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_transpose_chars",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_word_deletion_alt_keys",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_cmd_editing.test_word_motion_forward_and_back",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_command_name_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_command_name_completion_ambiguous",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_completion_in_other_prompts",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_executable_completion_from_path",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_file_completion_escaping_differs_by_prompt",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_file_completion_respects_command",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_hidden_file_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_menu_complete_accept_and_discard",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_menu_complete_family",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_menu_complete_unique_match",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_menu_complete_wraps_to_last",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_option_name_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion.test_option_value_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_bool_option_value_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_borderstyle_value_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_info_option_list_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_map_expression_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_select_and_source_complete_files[:select ]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_select_and_source_complete_files[:source ]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_setlocal_completes_directories",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_toggle_completes_each_argument",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_unknown_command_completes_files",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_more.test_user_command_name_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_cd_completion_descends_into_subdirectory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_cd_completion_prefix_inside_subdirectory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_choice_option_value_completion[filtermethod-glob    regex   text]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_choice_option_value_completion[searchmethod-glob    regex   text]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_choice_option_value_completion[selmode-all     dir]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_choice_option_value_completion[sizeunits-binary  decimal]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_cmd_definition_body_is_not_completed",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_common_prefix_keeps_first_match_case",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_completion_escaping_differs_between_prompts",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_completion_without_matches_is_a_noop",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_executable_completion_scans_every_path_entry",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_executable_completion_skips_broken_path_entries",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_executable_completion_skips_non_executables",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_executable_completion_without_match",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_file_completion_matches_case_insensitively",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_file_completion_with_directory_prefix",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_info_list_tail_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_map_expression_lists_all_commands",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_mode_map_expression_completion[cmap]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_mode_map_expression_completion[nmap]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_mode_map_expression_completion[vmap]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_non_list_option_value_has_no_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_option_value_prefix_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set cleaner a-:set cleaner a.txt]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set previewer -None]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set rulerfile ze-:set rulerfile zeta.md]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_preserve_option_list_completion",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_search_completion_is_case_insensitive",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_search_completion_without_match",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_set_with_extra_arguments_stops_completing",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_setlocal_completes_local_option_names",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_setlocal_value_completion[hidden -false   true]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_setlocal_value_completion[info -atime   btime   ctime   custom  group   perm    size    time    user]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_setlocal_value_completion[sortby -atime   btime   ctime   custom  ext     name    natural size    time]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_shell_file_completion_with_directory_prefix",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[!]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[$]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[%]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[&]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_symlink_to_directory_completes_with_separator",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_completion_paths.test_terminalcursor_value_completion_spans_rows",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_addcustominfo_argument_count[:addcustominfo a.txt 1 extra\\r]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_addcustominfo_argument_count[:addcustominfo\\r]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_addcustominfo_missing_file",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_backspace_keeps_pipe_and_filter_prompts_open",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_cmd_guards_on_empty_input",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_cmd_insert_without_arguments",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_cmd_motion_guards",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_colon_prompt_prefix_switch",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_commands_requiring_arguments[:glob-select\\r-glob-select: requires a pattern to match]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_commands_requiring_arguments[:glob-unselect\\r-glob-unselect: requires a pattern to match]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_commands_requiring_arguments[:push\\r-push: requires an argument]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_commands_requiring_arguments[:source\\r-source: requires an argument]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_commands_requiring_arguments[:tty-write\\r-tty-write: requires an argument]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_find_back_reverses_semicolon_and_comma",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_findlen_zero_waits_for_unique_pattern",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_history_navigation_edges",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_incsearch_back_restores_on_escape",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_mark_load_removed_directory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_mark_remove_unknown_mark",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_mark_save_write_error",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_open_directory_and_updir",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_print_selection_flag_prints_on_open",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_rename_in_empty_directory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_rename_prefills_directory_name",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_scroll_keys_clamp_at_view_edges",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_search_back_reverses_n_and_N",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_selection_path_flag_writes_on_open",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_tag_unreadable_tags_file",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_toggle_resolves_argument_against_cwd",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_user_commands_override_modal_builtins",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_visual_commands_outside_visual_mode",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_eval_edges.test_wait_and_pipe_prefixes_via_user_commands",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_anchorfind_controls_prefix_matching",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_filtermethod_glob",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_find_next_cycles_with_wrapscan",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_find_next_stops_without_wrapscan",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_find_prev_steps_back",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_find_prompt_moves_and_reports_miss",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_findlen_waits_for_full_pattern",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_search_and_search_next_prev",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_search_back_and_unmatched_pattern",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_search_regex_method",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_find_search_filter.test_setfilter_and_filter_prompt",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_cmd_history_empty",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_cmd_history_filters_by_prefix",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_cmd_history_prev_and_next",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_history_is_capped_at_1000",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_history_merges_with_existing_file",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_history_records_all_shell_prefixes",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_history_records_commands",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_history_skips_unprefixed_lines",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_no_history_without_commands",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_history.test_nohistory_option_disables_recording",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_focus_hooks",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_on_init_and_query_commands_in_server_mode",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_on_load_receives_loaded_files",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_on_quit_runs_before_exit",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_on_redraw_fires_twice",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_on_select_follows_cursor",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_pre_cd_and_on_cd",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_hooks.test_remote_send_and_quit",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_marks_tags.test_mark_load_menu_and_unknown_mark",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_marks_tags.test_mark_remove",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_marks_tags.test_mark_save_load_roundtrip",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_marks_tags.test_sync_reloads_marks_and_clipboard",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_marks_tags.test_tag_and_tag_toggle",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_addcustominfo",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_calcdirsize",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_clearmaps_unbinds_all_keys",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_high_middle_low",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_incfilter_filters_listing_while_typing",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_incsearch_moves_cursor_while_typing",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_jump_prev_and_next",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_lf_mode_variable",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:cmaps\\r]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:nmaps\\r]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:vmaps\\r]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_scroll_moves_view_not_cursor",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_source_reads_extra_config",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_transpose_word",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_misc_commands.test_updir_moves_to_parent",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_modals.test_delete_modal_single_file",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_modals.test_delete_modal_with_selections",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_modals.test_rename_create_directory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_modals.test_rename_modal_prefill_and_extension",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_modals.test_rename_replace_confirmation",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_copy_cut_clear_write_files_file",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_copy_multiple_selections",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_glob_select_and_unselect",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_invert_and_unselect",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_paste_empty_clipboard_error",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_paste_into_directory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_select_argument_requirements",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_select_moves_cursor_without_selecting",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_space_toggles_selection",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_toggle_with_file_arguments",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_visual_accept_unselect_discard",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_visual_change_flips_anchor",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_selection_clipboard.test_visual_mode_selections",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_argument_errors[:set hidden maybe\\r-hidden: value should be empty, 'true', or 'false']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_argument_errors[:set hidden! x\\r-hidden!: unexpected value: x]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_argument_errors[:set nohidden true\\r-nohidden: unexpected value: true]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_argument_errors[:set nosuchoption\\r-unknown option: nosuchoption]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_deprecated_options",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_dironly_and_dirfirst",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_drawbox",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set borderstyle bogus\\r-borderstyle: value should either be]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set filtermethod bogus\\r-filtermethod: value should either be 'text']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set searchmethod bogus\\r-searchmethod: value should either be 'text', 'glob' or 'regex']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set selmode bogus\\r-selmode: value should either be 'all' or 'dir']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set sizeunits bogus\\r-sizeunits: value should either be 'binary' or 'decimal']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set sortby bogus\\r-sortby: value should either be 'natural']",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_enum_value_errors[:set terminalcursor bogus\\r-terminalcursor: value should either be]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_hidden_value_forms",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_hiddenfiles",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_info_size_and_errors",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_number_and_relativenumber",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set findlen -1\\r-findlen: value should be a non-negative number]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set findlen x\\r-findlen: strconv.Atoi: parsing \"x\": invalid syntax]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set period -1\\r-period: value should be a non-negative number]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set period x\\r-period: strconv.Atoi: parsing \"x\": invalid syntax]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios 1:0\\r-ratios: value should be a positive number]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios 1\\r-ratios: should consist of at least two numbers when 'preview' is enabled]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios a\\r-ratios: strconv.Atoi: parsing \"a\": invalid syntax]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set scrolloff -2\\r-scrolloff: value should be a non-negative number]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_numeric_option_errors[:set tabstop 0\\r-tabstop: value should be a positive number]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_preserve_invalid",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_promptfmt",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_ratios_needs_two_panes_for_preview",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_reverse",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_smartcase_and_ignorecase_differential",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_sortby_custom_uses_addcustominfo",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_sortby_size_and_ext",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_set_options.test_set_wrapscroll_wraps_cursor",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_dironly_resolves_dot_to_viewed_dir",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_hidden_scoped_to_directory",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_info_size",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_reverse_reorders_only_that_dir",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_sortby_size_ascending",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_setlocal.test_setlocal_unknown_option",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_async_output_is_discarded",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_dollar_failure_reports_status",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_dollar_output_reaches_terminal",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_dollar_success_is_silent",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_exported_selection_variables",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_ifs_option_prepends_assignment",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_pipe_interrupt_message",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_pipe_prefix_reads_and_echoes",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shell_command_prompts[:shell-async\\r-&]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shell_command_prompts[:shell-pipe\\r-%]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shell_command_prompts[:shell-wait\\r-!]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shell_command_prompts[:shell\\r-$]",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shell_option_builds_argv",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shellflag_option",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_shellopts_option",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_wait_message_is_configurable",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_shell.test_wait_prefix_pauses_for_keypress",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_builtin_commands_shadow_user_commands",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_colon_body_passes_arguments_literally",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_command_redefinition_without_body_deletes",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_default_open_editor_and_pager",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_help_prints_documentation",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_map_define_and_undefine",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_map_with_special_key_syntax",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_maps_without_server_errors",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_nmap_and_vmap_are_mode_scoped",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_user_command_argv_composition",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_user_command_quoted_arguments",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_user_command_receives_arguments",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        },
+        {
+          "name": "eval.tests.test_user_commands.test_user_command_single_line_body",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_builtin_commands.test_cd_dash_swaps_with_previous",
+        "eval.tests.test_builtin_commands.test_cd_dash_without_previous",
+        "eval.tests.test_builtin_commands.test_cd_errors",
+        "eval.tests.test_builtin_commands.test_command_arguments_are_not_counts",
+        "eval.tests.test_builtin_commands.test_draw_and_redraw_are_silent",
+        "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echo]",
+        "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echoerr]",
+        "eval.tests.test_builtin_commands.test_echo_family_shows_message[:echomsg]",
+        "eval.tests.test_builtin_commands.test_echo_quoted_argument",
+        "eval.tests.test_builtin_commands.test_empty_command_line_stays_open",
+        "eval.tests.test_builtin_commands.test_half_and_page_movement",
+        "eval.tests.test_builtin_commands.test_push_moves_cursor",
+        "eval.tests.test_builtin_commands.test_push_special_keys_literal",
+        "eval.tests.test_builtin_commands.test_reload_and_load_refresh_listing",
+        "eval.tests.test_builtin_commands.test_top_bottom_and_counted_jumps",
+        "eval.tests.test_builtin_commands.test_tty_write_goes_to_the_terminal",
+        "eval.tests.test_builtin_commands.test_typed_counts_and_clamping",
+        "eval.tests.test_builtin_commands.test_unknown_command_error",
+        "eval.tests.test_cmd_editing.test_backspace_edits_and_eats_prefix",
+        "eval.tests.test_cmd_editing.test_case_operations",
+        "eval.tests.test_cmd_editing.test_ctrl_g_keeps_prompt",
+        "eval.tests.test_cmd_editing.test_ctrl_h_is_backspace",
+        "eval.tests.test_cmd_editing.test_ctrl_k_kills_to_end",
+        "eval.tests.test_cmd_editing.test_ctrl_u_noop_at_home",
+        "eval.tests.test_cmd_editing.test_delete_key_forward",
+        "eval.tests.test_cmd_editing.test_delete_word_and_yank_back",
+        "eval.tests.test_cmd_editing.test_escape_and_interrupt_close_prompt",
+        "eval.tests.test_cmd_editing.test_home_end_and_insert",
+        "eval.tests.test_cmd_editing.test_transpose_chars",
+        "eval.tests.test_cmd_editing.test_word_deletion_alt_keys",
+        "eval.tests.test_cmd_editing.test_word_motion_forward_and_back",
+        "eval.tests.test_completion.test_command_name_completion",
+        "eval.tests.test_completion.test_command_name_completion_ambiguous",
+        "eval.tests.test_completion.test_completion_in_other_prompts",
+        "eval.tests.test_completion.test_executable_completion_from_path",
+        "eval.tests.test_completion.test_file_completion_escaping_differs_by_prompt",
+        "eval.tests.test_completion.test_file_completion_respects_command",
+        "eval.tests.test_completion.test_hidden_file_completion",
+        "eval.tests.test_completion.test_menu_complete_accept_and_discard",
+        "eval.tests.test_completion.test_menu_complete_family",
+        "eval.tests.test_completion.test_menu_complete_unique_match",
+        "eval.tests.test_completion.test_menu_complete_wraps_to_last",
+        "eval.tests.test_completion.test_option_name_completion",
+        "eval.tests.test_completion.test_option_value_completion",
+        "eval.tests.test_completion_more.test_bool_option_value_completion",
+        "eval.tests.test_completion_more.test_borderstyle_value_completion",
+        "eval.tests.test_completion_more.test_info_option_list_completion",
+        "eval.tests.test_completion_more.test_map_expression_completion",
+        "eval.tests.test_completion_more.test_select_and_source_complete_files[:select ]",
+        "eval.tests.test_completion_more.test_select_and_source_complete_files[:source ]",
+        "eval.tests.test_completion_more.test_setlocal_completes_directories",
+        "eval.tests.test_completion_more.test_toggle_completes_each_argument",
+        "eval.tests.test_completion_more.test_unknown_command_completes_files",
+        "eval.tests.test_completion_more.test_user_command_name_completion",
+        "eval.tests.test_completion_paths.test_cd_completion_descends_into_subdirectory",
+        "eval.tests.test_completion_paths.test_cd_completion_prefix_inside_subdirectory",
+        "eval.tests.test_completion_paths.test_choice_option_value_completion[filtermethod-glob    regex   text]",
+        "eval.tests.test_completion_paths.test_choice_option_value_completion[searchmethod-glob    regex   text]",
+        "eval.tests.test_completion_paths.test_choice_option_value_completion[selmode-all     dir]",
+        "eval.tests.test_completion_paths.test_choice_option_value_completion[sizeunits-binary  decimal]",
+        "eval.tests.test_completion_paths.test_cmd_definition_body_is_not_completed",
+        "eval.tests.test_completion_paths.test_common_prefix_keeps_first_match_case",
+        "eval.tests.test_completion_paths.test_completion_escaping_differs_between_prompts",
+        "eval.tests.test_completion_paths.test_completion_without_matches_is_a_noop",
+        "eval.tests.test_completion_paths.test_executable_completion_scans_every_path_entry",
+        "eval.tests.test_completion_paths.test_executable_completion_skips_broken_path_entries",
+        "eval.tests.test_completion_paths.test_executable_completion_skips_non_executables",
+        "eval.tests.test_completion_paths.test_executable_completion_without_match",
+        "eval.tests.test_completion_paths.test_file_completion_matches_case_insensitively",
+        "eval.tests.test_completion_paths.test_file_completion_with_directory_prefix",
+        "eval.tests.test_completion_paths.test_info_list_tail_completion",
+        "eval.tests.test_completion_paths.test_map_expression_lists_all_commands",
+        "eval.tests.test_completion_paths.test_mode_map_expression_completion[cmap]",
+        "eval.tests.test_completion_paths.test_mode_map_expression_completion[nmap]",
+        "eval.tests.test_completion_paths.test_mode_map_expression_completion[vmap]",
+        "eval.tests.test_completion_paths.test_non_list_option_value_has_no_completion",
+        "eval.tests.test_completion_paths.test_option_value_prefix_completion",
+        "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set cleaner a-:set cleaner a.txt]",
+        "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set previewer -None]",
+        "eval.tests.test_completion_paths.test_path_option_values_complete_files[:set rulerfile ze-:set rulerfile zeta.md]",
+        "eval.tests.test_completion_paths.test_preserve_option_list_completion",
+        "eval.tests.test_completion_paths.test_search_completion_is_case_insensitive",
+        "eval.tests.test_completion_paths.test_search_completion_without_match",
+        "eval.tests.test_completion_paths.test_set_with_extra_arguments_stops_completing",
+        "eval.tests.test_completion_paths.test_setlocal_completes_local_option_names",
+        "eval.tests.test_completion_paths.test_setlocal_value_completion[hidden -false   true]",
+        "eval.tests.test_completion_paths.test_setlocal_value_completion[info -atime   btime   ctime   custom  group   perm    size    time    user]",
+        "eval.tests.test_completion_paths.test_setlocal_value_completion[sortby -atime   btime   ctime   custom  ext     name    natural size    time]",
+        "eval.tests.test_completion_paths.test_shell_file_completion_with_directory_prefix",
+        "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[!]",
+        "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[$]",
+        "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[%]",
+        "eval.tests.test_completion_paths.test_shell_prompts_complete_file_arguments[&]",
+        "eval.tests.test_completion_paths.test_symlink_to_directory_completes_with_separator",
+        "eval.tests.test_completion_paths.test_terminalcursor_value_completion_spans_rows",
+        "eval.tests.test_eval_edges.test_addcustominfo_argument_count[:addcustominfo a.txt 1 extra\\r]",
+        "eval.tests.test_eval_edges.test_addcustominfo_argument_count[:addcustominfo\\r]",
+        "eval.tests.test_eval_edges.test_addcustominfo_missing_file",
+        "eval.tests.test_eval_edges.test_backspace_keeps_pipe_and_filter_prompts_open",
+        "eval.tests.test_eval_edges.test_cmd_guards_on_empty_input",
+        "eval.tests.test_eval_edges.test_cmd_insert_without_arguments",
+        "eval.tests.test_eval_edges.test_cmd_motion_guards",
+        "eval.tests.test_eval_edges.test_colon_prompt_prefix_switch",
+        "eval.tests.test_eval_edges.test_commands_requiring_arguments[:glob-select\\r-glob-select: requires a pattern to match]",
+        "eval.tests.test_eval_edges.test_commands_requiring_arguments[:glob-unselect\\r-glob-unselect: requires a pattern to match]",
+        "eval.tests.test_eval_edges.test_commands_requiring_arguments[:push\\r-push: requires an argument]",
+        "eval.tests.test_eval_edges.test_commands_requiring_arguments[:source\\r-source: requires an argument]",
+        "eval.tests.test_eval_edges.test_commands_requiring_arguments[:tty-write\\r-tty-write: requires an argument]",
+        "eval.tests.test_eval_edges.test_find_back_reverses_semicolon_and_comma",
+        "eval.tests.test_eval_edges.test_findlen_zero_waits_for_unique_pattern",
+        "eval.tests.test_eval_edges.test_history_navigation_edges",
+        "eval.tests.test_eval_edges.test_incsearch_back_restores_on_escape",
+        "eval.tests.test_eval_edges.test_mark_load_removed_directory",
+        "eval.tests.test_eval_edges.test_mark_remove_unknown_mark",
+        "eval.tests.test_eval_edges.test_mark_save_write_error",
+        "eval.tests.test_eval_edges.test_open_directory_and_updir",
+        "eval.tests.test_eval_edges.test_print_selection_flag_prints_on_open",
+        "eval.tests.test_eval_edges.test_rename_in_empty_directory",
+        "eval.tests.test_eval_edges.test_rename_prefills_directory_name",
+        "eval.tests.test_eval_edges.test_scroll_keys_clamp_at_view_edges",
+        "eval.tests.test_eval_edges.test_search_back_reverses_n_and_N",
+        "eval.tests.test_eval_edges.test_selection_path_flag_writes_on_open",
+        "eval.tests.test_eval_edges.test_tag_unreadable_tags_file",
+        "eval.tests.test_eval_edges.test_toggle_resolves_argument_against_cwd",
+        "eval.tests.test_eval_edges.test_user_commands_override_modal_builtins",
+        "eval.tests.test_eval_edges.test_visual_commands_outside_visual_mode",
+        "eval.tests.test_eval_edges.test_wait_and_pipe_prefixes_via_user_commands",
+        "eval.tests.test_find_search_filter.test_anchorfind_controls_prefix_matching",
+        "eval.tests.test_find_search_filter.test_filtermethod_glob",
+        "eval.tests.test_find_search_filter.test_find_next_cycles_with_wrapscan",
+        "eval.tests.test_find_search_filter.test_find_next_stops_without_wrapscan",
+        "eval.tests.test_find_search_filter.test_find_prev_steps_back",
+        "eval.tests.test_find_search_filter.test_find_prompt_moves_and_reports_miss",
+        "eval.tests.test_find_search_filter.test_findlen_waits_for_full_pattern",
+        "eval.tests.test_find_search_filter.test_search_and_search_next_prev",
+        "eval.tests.test_find_search_filter.test_search_back_and_unmatched_pattern",
+        "eval.tests.test_find_search_filter.test_search_regex_method",
+        "eval.tests.test_find_search_filter.test_setfilter_and_filter_prompt",
+        "eval.tests.test_history.test_cmd_history_empty",
+        "eval.tests.test_history.test_cmd_history_filters_by_prefix",
+        "eval.tests.test_history.test_cmd_history_prev_and_next",
+        "eval.tests.test_history.test_history_is_capped_at_1000",
+        "eval.tests.test_history.test_history_merges_with_existing_file",
+        "eval.tests.test_history.test_history_records_all_shell_prefixes",
+        "eval.tests.test_history.test_history_records_commands",
+        "eval.tests.test_history.test_history_skips_unprefixed_lines",
+        "eval.tests.test_history.test_no_history_without_commands",
+        "eval.tests.test_history.test_nohistory_option_disables_recording",
+        "eval.tests.test_hooks.test_focus_hooks",
+        "eval.tests.test_hooks.test_on_init_and_query_commands_in_server_mode",
+        "eval.tests.test_hooks.test_on_load_receives_loaded_files",
+        "eval.tests.test_hooks.test_on_quit_runs_before_exit",
+        "eval.tests.test_hooks.test_on_redraw_fires_twice",
+        "eval.tests.test_hooks.test_on_select_follows_cursor",
+        "eval.tests.test_hooks.test_pre_cd_and_on_cd",
+        "eval.tests.test_hooks.test_remote_send_and_quit",
+        "eval.tests.test_marks_tags.test_mark_load_menu_and_unknown_mark",
+        "eval.tests.test_marks_tags.test_mark_remove",
+        "eval.tests.test_marks_tags.test_mark_save_load_roundtrip",
+        "eval.tests.test_marks_tags.test_sync_reloads_marks_and_clipboard",
+        "eval.tests.test_marks_tags.test_tag_and_tag_toggle",
+        "eval.tests.test_misc_commands.test_addcustominfo",
+        "eval.tests.test_misc_commands.test_calcdirsize",
+        "eval.tests.test_misc_commands.test_clearmaps_unbinds_all_keys",
+        "eval.tests.test_misc_commands.test_high_middle_low",
+        "eval.tests.test_misc_commands.test_incfilter_filters_listing_while_typing",
+        "eval.tests.test_misc_commands.test_incsearch_moves_cursor_while_typing",
+        "eval.tests.test_misc_commands.test_jump_prev_and_next",
+        "eval.tests.test_misc_commands.test_lf_mode_variable",
+        "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:cmaps\\r]",
+        "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:nmaps\\r]",
+        "eval.tests.test_misc_commands.test_mode_map_listings_need_a_server[:vmaps\\r]",
+        "eval.tests.test_misc_commands.test_scroll_moves_view_not_cursor",
+        "eval.tests.test_misc_commands.test_source_reads_extra_config",
+        "eval.tests.test_misc_commands.test_transpose_word",
+        "eval.tests.test_misc_commands.test_updir_moves_to_parent",
+        "eval.tests.test_modals.test_delete_modal_single_file",
+        "eval.tests.test_modals.test_delete_modal_with_selections",
+        "eval.tests.test_modals.test_rename_create_directory",
+        "eval.tests.test_modals.test_rename_modal_prefill_and_extension",
+        "eval.tests.test_modals.test_rename_replace_confirmation",
+        "eval.tests.test_selection_clipboard.test_copy_cut_clear_write_files_file",
+        "eval.tests.test_selection_clipboard.test_copy_multiple_selections",
+        "eval.tests.test_selection_clipboard.test_glob_select_and_unselect",
+        "eval.tests.test_selection_clipboard.test_invert_and_unselect",
+        "eval.tests.test_selection_clipboard.test_paste_empty_clipboard_error",
+        "eval.tests.test_selection_clipboard.test_paste_into_directory",
+        "eval.tests.test_selection_clipboard.test_select_argument_requirements",
+        "eval.tests.test_selection_clipboard.test_select_moves_cursor_without_selecting",
+        "eval.tests.test_selection_clipboard.test_space_toggles_selection",
+        "eval.tests.test_selection_clipboard.test_toggle_with_file_arguments",
+        "eval.tests.test_selection_clipboard.test_visual_accept_unselect_discard",
+        "eval.tests.test_selection_clipboard.test_visual_change_flips_anchor",
+        "eval.tests.test_selection_clipboard.test_visual_mode_selections",
+        "eval.tests.test_set_options.test_set_argument_errors[:set hidden maybe\\r-hidden: value should be empty, 'true', or 'false']",
+        "eval.tests.test_set_options.test_set_argument_errors[:set hidden! x\\r-hidden!: unexpected value: x]",
+        "eval.tests.test_set_options.test_set_argument_errors[:set nohidden true\\r-nohidden: unexpected value: true]",
+        "eval.tests.test_set_options.test_set_argument_errors[:set nosuchoption\\r-unknown option: nosuchoption]",
+        "eval.tests.test_set_options.test_set_deprecated_options",
+        "eval.tests.test_set_options.test_set_dironly_and_dirfirst",
+        "eval.tests.test_set_options.test_set_drawbox",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set borderstyle bogus\\r-borderstyle: value should either be]",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set filtermethod bogus\\r-filtermethod: value should either be 'text']",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set searchmethod bogus\\r-searchmethod: value should either be 'text', 'glob' or 'regex']",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set selmode bogus\\r-selmode: value should either be 'all' or 'dir']",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set sizeunits bogus\\r-sizeunits: value should either be 'binary' or 'decimal']",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set sortby bogus\\r-sortby: value should either be 'natural']",
+        "eval.tests.test_set_options.test_set_enum_value_errors[:set terminalcursor bogus\\r-terminalcursor: value should either be]",
+        "eval.tests.test_set_options.test_set_hidden_value_forms",
+        "eval.tests.test_set_options.test_set_hiddenfiles",
+        "eval.tests.test_set_options.test_set_info_size_and_errors",
+        "eval.tests.test_set_options.test_set_number_and_relativenumber",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set findlen -1\\r-findlen: value should be a non-negative number]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set findlen x\\r-findlen: strconv.Atoi: parsing \"x\": invalid syntax]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set period -1\\r-period: value should be a non-negative number]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set period x\\r-period: strconv.Atoi: parsing \"x\": invalid syntax]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios 1:0\\r-ratios: value should be a positive number]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios 1\\r-ratios: should consist of at least two numbers when 'preview' is enabled]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set ratios a\\r-ratios: strconv.Atoi: parsing \"a\": invalid syntax]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set scrolloff -2\\r-scrolloff: value should be a non-negative number]",
+        "eval.tests.test_set_options.test_set_numeric_option_errors[:set tabstop 0\\r-tabstop: value should be a positive number]",
+        "eval.tests.test_set_options.test_set_preserve_invalid",
+        "eval.tests.test_set_options.test_set_promptfmt",
+        "eval.tests.test_set_options.test_set_ratios_needs_two_panes_for_preview",
+        "eval.tests.test_set_options.test_set_reverse",
+        "eval.tests.test_set_options.test_set_smartcase_and_ignorecase_differential",
+        "eval.tests.test_set_options.test_set_sortby_custom_uses_addcustominfo",
+        "eval.tests.test_set_options.test_set_sortby_size_and_ext",
+        "eval.tests.test_set_options.test_set_user_option_exports_env",
+        "eval.tests.test_set_options.test_set_wrapscroll_wraps_cursor",
+        "eval.tests.test_setlocal.test_setlocal_dironly_resolves_dot_to_viewed_dir",
+        "eval.tests.test_setlocal.test_setlocal_hidden_scoped_to_directory",
+        "eval.tests.test_setlocal.test_setlocal_info_size",
+        "eval.tests.test_setlocal.test_setlocal_reverse_reorders_only_that_dir",
+        "eval.tests.test_setlocal.test_setlocal_sortby_size_ascending",
+        "eval.tests.test_setlocal.test_setlocal_unknown_option",
+        "eval.tests.test_shell.test_async_output_is_discarded",
+        "eval.tests.test_shell.test_dollar_failure_reports_status",
+        "eval.tests.test_shell.test_dollar_output_reaches_terminal",
+        "eval.tests.test_shell.test_dollar_success_is_silent",
+        "eval.tests.test_shell.test_exported_selection_variables",
+        "eval.tests.test_shell.test_ifs_option_prepends_assignment",
+        "eval.tests.test_shell.test_pipe_interrupt_message",
+        "eval.tests.test_shell.test_pipe_prefix_reads_and_echoes",
+        "eval.tests.test_shell.test_shell_command_prompts[:shell-async\\r-&]",
+        "eval.tests.test_shell.test_shell_command_prompts[:shell-pipe\\r-%]",
+        "eval.tests.test_shell.test_shell_command_prompts[:shell-wait\\r-!]",
+        "eval.tests.test_shell.test_shell_command_prompts[:shell\\r-$]",
+        "eval.tests.test_shell.test_shell_option_builds_argv",
+        "eval.tests.test_shell.test_shellflag_option",
+        "eval.tests.test_shell.test_shellopts_option",
+        "eval.tests.test_shell.test_wait_message_is_configurable",
+        "eval.tests.test_shell.test_wait_prefix_pauses_for_keypress",
+        "eval.tests.test_user_commands.test_builtin_commands_shadow_user_commands",
+        "eval.tests.test_user_commands.test_colon_body_passes_arguments_literally",
+        "eval.tests.test_user_commands.test_command_redefinition_without_body_deletes",
+        "eval.tests.test_user_commands.test_default_open_editor_and_pager",
+        "eval.tests.test_user_commands.test_help_prints_documentation",
+        "eval.tests.test_user_commands.test_map_define_and_undefine",
+        "eval.tests.test_user_commands.test_map_with_special_key_syntax",
+        "eval.tests.test_user_commands.test_maps_without_server_errors",
+        "eval.tests.test_user_commands.test_nmap_and_vmap_are_mode_scoped",
+        "eval.tests.test_user_commands.test_user_command_argv_composition",
+        "eval.tests.test_user_commands.test_user_command_quoted_arguments",
+        "eval.tests.test_user_commands.test_user_command_receives_arguments",
+        "eval.tests.test_user_commands.test_user_command_single_line_body",
+        "eval.tests.test_zz_probe.test_probe_copy_newline_name",
+        "eval.tests.test_zz_probe.test_probe_dircounts",
+        "eval.tests.test_zz_probe.test_probe_fifo_copy_quit",
+        "eval.tests.test_zz_probe.test_probe_watch_delete_selection"
+      ]
+    },
+    "navigation_and_file_ops": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [],
+      "tests": [
+        "eval.tests.test_filter.TestFilterLifecycle.test_filter_prompt_prefilled_from_argument",
+        "eval.tests.test_filter.TestFilterLifecycle.test_filter_reset_on_cd_and_restored_on_back",
+        "eval.tests.test_filter.TestFilterLifecycle.test_incfilter_updates_while_typing",
+        "eval.tests.test_filter.TestFilterMethod.test_glob_method",
+        "eval.tests.test_filter.TestFilterMethod.test_regex_method_and_invalid_regex",
+        "eval.tests.test_filter.TestSetFilter.test_clear_filter_with_no_args",
+        "eval.tests.test_filter.TestSetFilter.test_filter_ruler_counts",
+        "eval.tests.test_filter.TestSetFilter.test_multiple_patterns_intersect",
+        "eval.tests.test_filter.TestSetFilter.test_negated_pattern",
+        "eval.tests.test_listing.TestDirCounts.test_calcdirsize_fills_dirsize_and_count",
+        "eval.tests.test_listing.TestDirCounts.test_calcdirsize_single_dir_4096_plus_files",
+        "eval.tests.test_listing.TestDirCounts.test_dircounts_ruler_counts_entries",
+        "eval.tests.test_listing.TestDirOnly.test_dironly_restricts_listing",
+        "eval.tests.test_listing.TestHidden.test_default_hides_dotfiles",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_can_hide_everything",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_empty_glob_error",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_glob_is_case_sensitive",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_invalid_pattern_error",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_negation_unhides",
+        "eval.tests.test_listing.TestHidden.test_hiddenfiles_replaces_default_patterns",
+        "eval.tests.test_listing.TestHidden.test_set_hidden_shows_dotfiles",
+        "eval.tests.test_navigation.TestCd.test_cd_errors",
+        "eval.tests.test_navigation.TestCd.test_cd_into_child_selects_child_in_parent",
+        "eval.tests.test_navigation.TestCd.test_cd_minus_without_previous_errors",
+        "eval.tests.test_navigation.TestCd.test_cd_no_argument_goes_home",
+        "eval.tests.test_navigation.TestCd.test_cd_relative_absolute_tilde_prev",
+        "eval.tests.test_navigation.TestCd.test_cursor_restored_when_returning",
+        "eval.tests.test_navigation.TestCd.test_updir_at_root_stays",
+        "eval.tests.test_navigation.TestCd.test_updir_positions_on_child",
+        "eval.tests.test_navigation.TestFind.test_find_and_find_next_wrap",
+        "eval.tests.test_navigation.TestFind.test_find_back",
+        "eval.tests.test_navigation.TestFind.test_find_not_found_error",
+        "eval.tests.test_navigation.TestJumpList.test_jump_list_and_navigation",
+        "eval.tests.test_navigation.TestMovement.test_down_beyond_end_is_clamped",
+        "eval.tests.test_navigation.TestMovement.test_half_and_page_movement",
+        "eval.tests.test_navigation.TestMovement.test_movement_keys_with_counts",
+        "eval.tests.test_navigation.TestMovement.test_scroll_commands_move_view_not_cursor",
+        "eval.tests.test_navigation.TestMovement.test_scrolloff_keeps_cursor_off_edges",
+        "eval.tests.test_navigation.TestMovement.test_wrapscroll_wraps_at_edges",
+        "eval.tests.test_navigation.TestSearch.test_search_next_without_further_match",
+        "eval.tests.test_navigation.TestSearch.test_search_no_match_is_silent",
+        "eval.tests.test_navigation.TestSearch.test_search_regex_method_error",
+        "eval.tests.test_navigation.TestSelect.test_select_moves_cursor_and_errors",
+        "eval.tests.test_navigation.TestSelect.test_select_path_with_spaces",
+        "eval.tests.test_sorting.TestCustomSort.test_addcustominfo_and_sortby_custom",
+        "eval.tests.test_sorting.TestCustomSort.test_addcustominfo_missing_file",
+        "eval.tests.test_sorting.TestDirFirst.test_dirfirst_default_and_disable",
+        "eval.tests.test_sorting.TestDirFirst.test_dirfirst_survives_reverse",
+        "eval.tests.test_sorting.TestReSort.test_resort_when_option_changes",
+        "eval.tests.test_sorting.TestSortBy.test_natural_orders_numbers_by_value",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_atime",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_btime_falls_back_to_mtime",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_ext_groups_by_extension",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_invalid_value_error",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_name_is_plain_string_compare",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_size_and_reverse",
+        "eval.tests.test_sorting.TestSortBy.test_sortby_time_uses_mtime",
+        "eval.tests.test_sorting.TestSortBy.test_sortignorecase_toggle",
+        "eval.tests.test_sorting.TestSortBy.test_sortignoredia_removes_diacritics",
+        "eval.tests.test_watch.TestNoWatch.test_without_watch_no_automatic_refresh[chmod-P-stat--rw-r--r----rwx------]",
+        "eval.tests.test_watch.TestNoWatch.test_without_watch_no_automatic_refresh[create-A-state-3-4]",
+        "eval.tests.test_watch.TestNoWatch.test_without_watch_no_automatic_refresh[write-Z-stat-4-301]",
+        "eval.tests.test_watch.TestPeriod.test_period_invalid_values_error",
+        "eval.tests.test_watch.TestPeriod.test_period_refreshes_listing",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_child_dircount_updates",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_deleted_cwd_cds_to_parent",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_external_chmod_updates_permissions",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_external_create_appears",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_external_remove_updates_listing",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_external_rename_updates_listing",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_external_write_updates_size",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_parent_directory_updates",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_symlinked_cwd_updates_via_alias",
+        "eval.tests.test_watch.TestWatchUpdates.test_watch_toggle_at_runtime"
+      ]
+    },
+    "ui_and_keybinding": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_prompt.test_prompt_truncation_narrow"
+        },
+        {
+          "name": "eval.tests.test_zzrec.test_rec_esc_other"
+        },
+        {
+          "name": "eval.tests.test_zzrec.test_rec_more_sgr"
+        },
+        {
+          "name": "eval.tests.test_prompt.test_default_prompt_format",
+          "reason": "fails in the verifier container (env-fragile); evidence: gokcehan--lf.664d7c8__yP8azz7"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_input.test_bracketed_paste_ignored",
+        "eval.tests.test_input.test_cmap_insert",
+        "eval.tests.test_input.test_cmd_history[1-:echo two]",
+        "eval.tests.test_input.test_cmd_history[2-:echo one]",
+        "eval.tests.test_input.test_cmd_line_editing[keys0-:echo hello wo]",
+        "eval.tests.test_input.test_cmd_line_editing[keys1-:]",
+        "eval.tests.test_input.test_cmd_line_editing[keys2-:echo hello]",
+        "eval.tests.test_input.test_cmd_line_editing[keys3-:Xecho hello world]",
+        "eval.tests.test_input.test_cmd_line_editing[keys4-:echo helloZ]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys0-:]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys1-$]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys2-%]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys3-!]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys4-&]",
+        "eval.tests.test_input.test_cmd_prompt_prefixes[keys5-:echo hi]",
+        "eval.tests.test_input.test_completion_menu",
+        "eval.tests.test_input.test_completion_menufmt",
+        "eval.tests.test_input.test_count_prefix[keys0-6-6/10]",
+        "eval.tests.test_input.test_count_prefix[keys1-2-2/10]",
+        "eval.tests.test_input.test_focus_events[\\x1b[I-FOCUS-GAINED]",
+        "eval.tests.test_input.test_focus_events[\\x1b[O-FOCUS-LOST]",
+        "eval.tests.test_input.test_keys_after_paste",
+        "eval.tests.test_input.test_marks_menu",
+        "eval.tests.test_input.test_mouse_buttons[0-M1]",
+        "eval.tests.test_input.test_mouse_buttons[1-M3]",
+        "eval.tests.test_input.test_mouse_buttons[2-M2]",
+        "eval.tests.test_input.test_mouse_buttons[3-None]",
+        "eval.tests.test_input.test_mouse_click_moves_cursor",
+        "eval.tests.test_input.test_mouse_events_without_mouse_option",
+        "eval.tests.test_input.test_mouse_wheel[64-1/8]",
+        "eval.tests.test_input.test_mouse_wheel[65-2/8]",
+        "eval.tests.test_input.test_multibind_execute[y-XY-BOUND]",
+        "eval.tests.test_input.test_multibind_execute[z-unknown mapping: xz]",
+        "eval.tests.test_input.test_multibind_menu",
+        "eval.tests.test_input.test_shell_env_exports[keys0-w=80 h=24 m=normal c=1]",
+        "eval.tests.test_input.test_shell_env_exports[keys1-w=80 h=24 m=normal c=7]",
+        "eval.tests.test_input.test_shell_env_exports[keys2-u=userval]",
+        "eval.tests.test_input.test_shell_env_exports_visual",
+        "eval.tests.test_input.test_shell_wait_and_async",
+        "eval.tests.test_input.test_showbinds_disabled",
+        "eval.tests.test_input.test_showbinds_esc_clears",
+        "eval.tests.test_input.test_showbinds_menu",
+        "eval.tests.test_input.test_special_key_names[<-LT-BOUND]",
+        "eval.tests.test_input.test_special_key_names[X-unknown mapping: X]",
+        "eval.tests.test_input.test_special_key_names[\\x18-CX-BOUND]",
+        "eval.tests.test_input.test_special_key_names[\\x1b[15~-F5-BOUND]",
+        "eval.tests.test_input.test_special_key_names[\\x1bx-AX-BOUND]",
+        "eval.tests.test_input.test_unknown_mapping[\\x1a-unknown mapping: <c-z>]",
+        "eval.tests.test_input.test_unknown_mapping[\\x1b[25~-unknown mapping: <f-13>]",
+        "eval.tests.test_layout.test_borderfmt_colors_frame",
+        "eval.tests.test_layout.test_borderstyle_variants[set drawbox\\n-files0-expected0]",
+        "eval.tests.test_layout.test_borderstyle_variants[set drawbox\\nset borderstyle outline\\n-files2-expected2]",
+        "eval.tests.test_layout.test_borderstyle_variants[set drawbox\\nset borderstyle roundbox\\n-files1-expected1]",
+        "eval.tests.test_layout.test_borderstyle_variants[set drawbox\\nset borderstyle roundoutline\\n-files4-expected4]",
+        "eval.tests.test_layout.test_borderstyle_variants[set drawbox\\nset borderstyle separators\\n-files3-expected3]",
+        "eval.tests.test_layout.test_borderstyle_without_drawbox",
+        "eval.tests.test_layout.test_default_pane_layout",
+        "eval.tests.test_layout.test_drawbox_full_frame",
+        "eval.tests.test_layout.test_narrow_pane_name_truncation",
+        "eval.tests.test_layout.test_preview_false_panes",
+        "eval.tests.test_layout.test_ratios_colon_syntax[set ratios 1:1:1:1\\n-expected1]",
+        "eval.tests.test_layout.test_ratios_colon_syntax[set ratios 1:1:1\\n-expected0]",
+        "eval.tests.test_layout.test_ratios_space_syntax_rejected",
+        "eval.tests.test_layout.test_ratios_with_drawbox[set ratios 1:1:1:1\\nset drawbox\\n-expected1]",
+        "eval.tests.test_layout.test_ratios_with_drawbox[set ratios 1:1:1\\nset drawbox\\n-expected0]",
+        "eval.tests.test_layout.test_resize_relayout",
+        "eval.tests.test_listing.test_cjk_filenames",
+        "eval.tests.test_listing.test_colors_file",
+        "eval.tests.test_listing.test_copy_cut_indicator[keys0-2]",
+        "eval.tests.test_listing.test_copy_cut_indicator[keys1-4]",
+        "eval.tests.test_listing.test_cursorfmts_custom",
+        "eval.tests.test_listing.test_cursorfmts_default",
+        "eval.tests.test_listing.test_icon_styles",
+        "eval.tests.test_listing.test_icons_file",
+        "eval.tests.test_listing.test_info_custom_column",
+        "eval.tests.test_listing.test_info_perm_special_bits",
+        "eval.tests.test_listing.test_info_perm_user_group",
+        "eval.tests.test_listing.test_info_size_binary_units",
+        "eval.tests.test_listing.test_info_size_decimal_units",
+        "eval.tests.test_listing.test_info_time_columns",
+        "eval.tests.test_listing.test_mergeindicators",
+        "eval.tests.test_listing.test_number_and_relativenumber",
+        "eval.tests.test_listing.test_number_column",
+        "eval.tests.test_listing.test_numberfmt_numbercursorfmt_styles",
+        "eval.tests.test_listing.test_numberfmt_prefix",
+        "eval.tests.test_listing.test_relativenumber_column",
+        "eval.tests.test_listing.test_selectfmt_indicator",
+        "eval.tests.test_listing.test_tag_marker",
+        "eval.tests.test_listing.test_truncation_options[set info size\\nset truncatechar \"\\u2026\"\\n-  ro\\u2026    avery\\u2026.txt]",
+        "eval.tests.test_listing.test_truncation_options[set info size\\nset truncatepct 50\\n-  r~t    av~ame.txt]",
+        "eval.tests.test_listing.test_visual_mode_rows",
+        "eval.tests.test_preview.test_binary_preview",
+        "eval.tests.test_preview.test_cleaner_invocation",
+        "eval.tests.test_preview.test_dirpreviews",
+        "eval.tests.test_preview.test_internal_preview_multiline",
+        "eval.tests.test_preview.test_internal_preview_sanitized",
+        "eval.tests.test_preview.test_loading_indicator",
+        "eval.tests.test_preview.test_preview_tabstop",
+        "eval.tests.test_preview.test_previewer_args_and_env[24-80-expected0]",
+        "eval.tests.test_preview.test_previewer_args_and_env[30-120-expected1]",
+        "eval.tests.test_preview.test_previewer_rerun_on_move",
+        "eval.tests.test_preview.test_previewer_sgr_styles",
+        "eval.tests.test_preview.test_sixel_passthrough",
+        "eval.tests.test_prompt.test_default_prompt_format",
+        "eval.tests.test_prompt.test_prompt_home_shortening",
+        "eval.tests.test_prompt.test_prompt_in_empty_dir",
+        "eval.tests.test_prompt.test_prompt_pwd_placeholders[DONLY=%d-/a/]",
+        "eval.tests.test_prompt.test_prompt_pwd_placeholders[WONLY=%w-/a]",
+        "eval.tests.test_prompt.test_prompt_spacer",
+        "eval.tests.test_prompt.test_prompt_truncation_narrow",
+        "eval.tests.test_prompt.test_promptfmt_filter_placeholder",
+        "eval.tests.test_prompt.test_promptfmt_placeholders",
+        "eval.tests.test_stat_ruler.test_errorfmt_styles[-style0]",
+        "eval.tests.test_stat_ruler.test_errorfmt_styles[set errorfmt \"\\\\033[7;32m\"\\n-style1]",
+        "eval.tests.test_stat_ruler.test_message_line_precedence",
+        "eval.tests.test_stat_ruler.test_rulerfile_clipboard",
+        "eval.tests.test_stat_ruler.test_rulerfile_errors[{{.Bad-parsing ruler: template: ruler:1: unclosed action]",
+        "eval.tests.test_stat_ruler.test_rulerfile_errors[{{.NoSuchField}}-rendering ruler: template: ruler:1:2: executing \"ruler\" at <.NoSuchField>: can't]",
+        "eval.tests.test_stat_ruler.test_rulerfile_helper_funcs",
+        "eval.tests.test_stat_ruler.test_rulerfile_hidden_counts[-T=2 H=1 A=3]",
+        "eval.tests.test_stat_ruler.test_rulerfile_hidden_counts[set hidden\\n-T=3 H=0 A=3]",
+        "eval.tests.test_stat_ruler.test_rulerfile_message_and_index",
+        "eval.tests.test_stat_ruler.test_rulerfile_scroll_percentages[keys0-L=100% S=Bot I=40]",
+        "eval.tests.test_stat_ruler.test_rulerfile_scroll_percentages[keys1-L=65% S=22% I=26]",
+        "eval.tests.test_stat_ruler.test_rulerfile_spacer[40-LEFT{{.SPACER}}MID{{.SPACER}}RIGHT-LEFT              MID              RIGHT]",
+        "eval.tests.test_stat_ruler.test_rulerfile_spacer[80-A{{.SPACER}}B-A                                                                              B]",
+        "eval.tests.test_stat_ruler.test_rulerfile_spacer[80-LEFT{{.SPACER}}MID{{.SPACER}}RIGHT-LEFT                                  MID                                  RIGHT]",
+        "eval.tests.test_stat_ruler.test_rulerfile_stat_fields",
+        "eval.tests.test_stat_ruler.test_rulerfile_user_options",
+        "eval.tests.test_stat_ruler.test_rulerfile_vars",
+        "eval.tests.test_stat_ruler.test_rulerfile_visual_mode",
+        "eval.tests.test_stat_ruler.test_rulerfmt_deprecated_placeholders",
+        "eval.tests.test_stat_ruler.test_statfmt_all_placeholders",
+        "eval.tests.test_stat_ruler.test_statfmt_default_symlink",
+        "eval.tests.test_stat_ruler.test_statfmt_deprecation_warning",
+        "eval.tests.test_stat_ruler.test_statfmt_selection_counts",
+        "eval.tests.test_stat_ruler.test_statfmt_sgr_styles",
+        "eval.tests.test_termseq.test_colors_sgr_attribute_codes",
+        "eval.tests.test_termseq.test_colors_sgr_color_codes",
+        "eval.tests.test_termseq.test_control_char_filenames",
+        "eval.tests.test_termseq.test_cursorfmts_percent_s",
+        "eval.tests.test_termseq.test_custominfo_sgr_cursor_strip",
+        "eval.tests.test_termseq.test_echo_broken_sequences",
+        "eval.tests.test_termseq.test_echo_hyperlink_bel_and_osc_title",
+        "eval.tests.test_termseq.test_echo_message_sanitization",
+        "eval.tests.test_termseq.test_echo_unterminated_long_sequences",
+        "eval.tests.test_termseq.test_internal_preview_tab_and_controls",
+        "eval.tests.test_termseq.test_previewer_hyperlink_invalid_utf8",
+        "eval.tests.test_termseq.test_previewer_sequence_rendering",
+        "eval.tests.test_termseq.test_prompt_pwd_control_char_dir",
+        "eval.tests.test_termseq.test_ruler_symlink_target_sanitized",
+        "eval.tests.test_termseq.test_sortby_custom_strips_sequences",
+        "eval.tests.test_zzrec.test_rec_esc_other",
+        "eval.tests.test_zzrec.test_rec_more_sgr"
+      ]
+    },
+    "test_reuse": {
+      "ignore_reason": "",
+      "ignored": false,
+      "ignored_tests": [
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[several-values]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[unknown-command]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[unknown-option]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[valid-command]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[home-dot-config]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[lf-config-home]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[xdg-config-home]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unknown-key]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unknown-option]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unparseable]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[valid-option]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_history_file_troubles_are_invisible_before_the_screen"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_unusable_config_is_not_reported_before_the_screen[directory]"
+        },
+        {
+          "name": "eval.tests.test_config_and_command_gate.test_unusable_config_is_not_reported_before_the_screen[unreadable]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_a_run_of_mixed_unicode_whitespace_collapses"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_broadcast_payload_keeps_interior_spacing_after_unicode_separators"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[cjk-inside]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[cjk-only]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[latin-1-supplement]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[form-feed]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[next-line]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[no-break-space]"
+        },
+        {
+          "name": "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[vertical-tab]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[0x10]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[1.5]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[9223372036854775808]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[+5-5]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[-5--5]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[0-0]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[007-7]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[9223372036854775807-9223372036854775807]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_duplicate_registration_routes_to_the_newest_connection"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_query_response_may_end_with_eof_instead_of_a_blank_line"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_query_response_stops_at_the_first_blank_line"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_query_to_a_vanished_client_keeps_it_registered"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_query_with_an_immediately_blank_response_prints_nothing"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_query_without_a_key_sends_a_bare_query_line"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_quit_force_with_a_vanished_client_still_exits"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_quit_pings_live_clients_and_drops_the_dead_ones"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_request_line_at_the_scanner_limit_is_answered"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_send_to_a_negative_client_id_delivers"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_send_to_a_vanished_client_keeps_it_registered"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_trailing_newline_appends_an_empty_request"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_whitespace_only_requests_are_unexpected_commands[ ]"
+        },
+        {
+          "name": "eval.tests.test_server_protocol_edges.test_whitespace_only_requests_are_unexpected_commands[\\t]"
+        },
+        {
+          "name": "eval.tests.test_server_query_failures.test_broadcast_with_no_registered_clients_is_silent"
+        },
+        {
+          "name": "eval.tests.test_server_query_failures.test_query_response_aborted_by_the_client_keeps_the_id_registered"
+        },
+        {
+          "name": "eval.tests.test_server_query_failures.test_query_to_a_requester_that_vanishes_logs_forwarding_errors"
+        }
+      ],
+      "tests": [
+        "eval.tests.test_client_environment_and_cwd.test_auto_started_server_does_not_write_into_the_client_log",
+        "eval.tests.test_client_environment_and_cwd.test_invalid_lf_level_is_logged_to_stderr",
+        "eval.tests.test_client_environment_and_cwd.test_missing_cwd_with_a_positional_argument_exits_one",
+        "eval.tests.test_client_environment_and_cwd.test_missing_cwd_without_arguments_exits_two",
+        "eval.tests.test_client_environment_and_cwd.test_relative_log_path_with_a_missing_cwd_is_fatal",
+        "eval.tests.test_client_startup_and_arguments.test_client_ignores_extra_meta_flags_when_failing",
+        "eval.tests.test_client_startup_and_arguments.test_client_log_in_a_missing_directory_is_fatal",
+        "eval.tests.test_client_startup_and_arguments.test_client_log_is_appended_across_runs",
+        "eval.tests.test_client_startup_and_arguments.test_client_log_pointing_at_a_directory_is_fatal",
+        "eval.tests.test_client_startup_and_arguments.test_client_log_records_banner_and_screen_failure",
+        "eval.tests.test_client_startup_and_arguments.test_client_log_with_relative_path_is_created_in_cwd",
+        "eval.tests.test_client_startup_and_arguments.test_default_mode_auto_starts_a_detached_server",
+        "eval.tests.test_client_startup_and_arguments.test_more_than_one_positional_argument_is_rejected[args0]",
+        "eval.tests.test_client_startup_and_arguments.test_more_than_one_positional_argument_is_rejected[args1]",
+        "eval.tests.test_client_startup_and_arguments.test_more_than_one_positional_argument_is_rejected[args2]",
+        "eval.tests.test_client_startup_and_arguments.test_print_flags_produce_no_output_when_client_fails",
+        "eval.tests.test_client_startup_and_arguments.test_server_log_with_relative_path_stays_in_cwd",
+        "eval.tests.test_client_startup_and_arguments.test_single_mode_never_touches_the_socket",
+        "eval.tests.test_client_startup_and_arguments.test_stale_regular_file_at_socket_path_is_replaced",
+        "eval.tests.test_client_startup_and_arguments.test_stale_socket_of_a_dead_server_is_replaced",
+        "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[several-values]",
+        "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[unknown-command]",
+        "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[unknown-option]",
+        "eval.tests.test_config_and_command_gate.test_command_flag_values_are_not_evaluated_before_the_screen[valid-command]",
+        "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[home-dot-config]",
+        "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[lf-config-home]",
+        "eval.tests.test_config_and_command_gate.test_default_config_paths_are_not_consulted_before_the_screen[xdg-config-home]",
+        "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unknown-key]",
+        "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unknown-option]",
+        "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[unparseable]",
+        "eval.tests.test_config_and_command_gate.test_existing_config_is_not_evaluated_before_the_screen[valid-option]",
+        "eval.tests.test_config_and_command_gate.test_history_file_troubles_are_invisible_before_the_screen",
+        "eval.tests.test_config_and_command_gate.test_the_gate_is_silent_without_a_log_file",
+        "eval.tests.test_config_and_command_gate.test_unusable_config_is_not_reported_before_the_screen[directory]",
+        "eval.tests.test_config_and_command_gate.test_unusable_config_is_not_reported_before_the_screen[unreadable]",
+        "eval.tests.test_doc_flag.test_doc_begins_with_name_synopsis_description",
+        "eval.tests.test_doc_flag.test_doc_ends_with_ruler_section_epilogue",
+        "eval.tests.test_doc_flag.test_doc_is_not_written_to_stderr",
+        "eval.tests.test_doc_flag.test_doc_section_headers_in_order",
+        "eval.tests.test_doc_flag.test_doc_size_and_digest",
+        "eval.tests.test_doc_flag.test_doc_synopsis_lists_every_flag_in_order",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[colors-order]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[diagnostics]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[lf-level]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[meta-options]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[positional-arguments]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[remote-example]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[server]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[shell-integration]",
+        "eval.tests.test_doc_flag.test_doc_verbatim_sections[startup-configuration]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args0]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args1]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args2]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args3]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args4]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args5]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args6]",
+        "eval.tests.test_doc_flag.test_doc_wins_over_every_other_mode[args7]",
+        "eval.tests.test_flag_and_positional_ordering.test_arity_failure_still_leaves_a_live_server_behind",
+        "eval.tests.test_flag_and_positional_ordering.test_double_dash_also_neutralises_single",
+        "eval.tests.test_flag_and_positional_ordering.test_double_dash_makes_the_next_argument_a_positional",
+        "eval.tests.test_flag_and_positional_ordering.test_log_flag_swallowing_a_dash_value_names_the_file",
+        "eval.tests.test_flag_and_positional_ordering.test_missing_config_path_is_not_validated_at_startup",
+        "eval.tests.test_flag_and_positional_ordering.test_parsing_stops_at_the_first_positional_argument[args0]",
+        "eval.tests.test_flag_and_positional_ordering.test_parsing_stops_at_the_first_positional_argument[args1]",
+        "eval.tests.test_flag_and_positional_ordering.test_parsing_stops_at_the_first_positional_argument[args2]",
+        "eval.tests.test_flag_and_positional_ordering.test_parsing_stops_at_the_first_positional_argument[args3]",
+        "eval.tests.test_flag_and_positional_ordering.test_server_wins_over_single_mode",
+        "eval.tests.test_flag_and_positional_ordering.test_string_flags_swallow_a_dash_prefixed_value",
+        "eval.tests.test_help_flags_and_version.test_accepted_boolean_values_reach_the_client[args0]",
+        "eval.tests.test_help_flags_and_version.test_accepted_boolean_values_reach_the_client[args1]",
+        "eval.tests.test_help_flags_and_version.test_accepted_boolean_values_reach_the_client[args2]",
+        "eval.tests.test_help_flags_and_version.test_accepted_boolean_values_reach_the_client[args3]",
+        "eval.tests.test_help_flags_and_version.test_accepted_boolean_values_reach_the_client[args4]",
+        "eval.tests.test_help_flags_and_version.test_flag_diagnostics_go_to_stderr_only",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-command]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-config]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-cpuprofile]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-last-dir-path]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-log]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-memprofile]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-remote]",
+        "eval.tests.test_help_flags_and_version.test_flag_without_argument_is_rejected[-selection-path]",
+        "eval.tests.test_help_flags_and_version.test_help_prints_usage_on_stderr",
+        "eval.tests.test_help_flags_and_version.test_help_reports_the_invoked_executable_path",
+        "eval.tests.test_help_flags_and_version.test_help_variants_and_precedence[args0]",
+        "eval.tests.test_help_flags_and_version.test_help_variants_and_precedence[args1]",
+        "eval.tests.test_help_flags_and_version.test_help_variants_and_precedence[args2]",
+        "eval.tests.test_help_flags_and_version.test_help_variants_and_precedence[args3]",
+        "eval.tests.test_help_flags_and_version.test_help_variants_and_precedence[args4]",
+        "eval.tests.test_help_flags_and_version.test_help_wins_over_doc_when_flag_parsing_fails",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-doc]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-help]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-print-last-dir]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-print-selection]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-server]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-single]",
+        "eval.tests.test_help_flags_and_version.test_invalid_boolean_value_is_rejected[-version]",
+        "eval.tests.test_help_flags_and_version.test_unknown_flag_is_rejected_with_usage",
+        "eval.tests.test_help_flags_and_version.test_version_prints_recorded_line_on_stdout",
+        "eval.tests.test_help_flags_and_version.test_version_wins_over_remote_and_server",
+        "eval.tests.test_profiles_and_diagnostics.test_both_profiles_can_be_written_together",
+        "eval.tests.test_profiles_and_diagnostics.test_cpuprofile_failure_is_fatal_before_any_output",
+        "eval.tests.test_profiles_and_diagnostics.test_cpuprofile_in_a_missing_directory_is_fatal",
+        "eval.tests.test_profiles_and_diagnostics.test_cpuprofile_writes_a_gzip_stream",
+        "eval.tests.test_profiles_and_diagnostics.test_memprofile_failure_is_fatal_after_the_output",
+        "eval.tests.test_profiles_and_diagnostics.test_memprofile_is_skipped_when_the_client_dies",
+        "eval.tests.test_profiles_and_diagnostics.test_memprofile_writes_a_gzip_stream",
+        "eval.tests.test_profiles_and_diagnostics.test_profile_flags_accept_relative_paths[-doc--memprofile-0]",
+        "eval.tests.test_profiles_and_diagnostics.test_profile_flags_accept_relative_paths[-single--cpuprofile-1]",
+        "eval.tests.test_profiles_and_diagnostics.test_profile_flags_accept_relative_paths[-single--log-1]",
+        "eval.tests.test_remote_server_protocol.test_remote_conn_never_returns",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[LIST-listen: unexpected command: LIST\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[conn 3x-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[conn 99999999999999999999-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[conn abc-listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[conn-listen: conn: requires a client ID\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[drop xyz-listen: drop: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[drop-listen: drop: requires a client ID\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[foo-listen: unexpected command: foo\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[nosuchcommand-listen: unexpected command: nosuchcommand\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[query 7 files-listen: query: no client with ID 7 connected\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[query abc-listen: query: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[query-listen: query: requires a client ID\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_diagnostics[send 7 hello-listen: send: no client with ID 7 connected\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_drop_removes_a_registered_client",
+        "eval.tests.test_remote_server_protocol.test_remote_list_is_empty_with_no_clients",
+        "eval.tests.test_remote_server_protocol.test_remote_list_reports_registered_clients",
+        "eval.tests.test_remote_server_protocol.test_remote_query_roundtrip",
+        "eval.tests.test_remote_server_protocol.test_remote_quit_exits_a_server_with_no_clients",
+        "eval.tests.test_remote_server_protocol.test_remote_quit_force_notifies_clients_and_exits",
+        "eval.tests.test_remote_server_protocol.test_remote_quit_leaves_server_alive_while_clients_exist",
+        "eval.tests.test_remote_server_protocol.test_remote_request_may_contain_several_lines",
+        "eval.tests.test_remote_server_protocol.test_remote_send_delivers_message_to_one_client",
+        "eval.tests.test_remote_server_protocol.test_remote_send_to_non_numeric_id_broadcasts",
+        "eval.tests.test_remote_server_protocol.test_remote_send_trailing_whitespace_is_preserved",
+        "eval.tests.test_remote_server_protocol.test_remote_send_without_message_writes_blank_line",
+        "eval.tests.test_remote_server_protocol.test_remote_with_empty_value_runs_the_client",
+        "eval.tests.test_remote_server_protocol.test_remote_without_server_is_fatal",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[    list    -4\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[   drop    xyz   -listen: drop: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[  \\t conn abc \\t -listen: conn: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[  foo  -listen: unexpected command: foo\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[  query   xyz -listen: query: client ID must be a number\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[  send   9   hi-listen: send: no client with ID 9 connected\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[\\tfoo\\t-listen: unexpected command: foo\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[\\tlist\\t-4\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[drop 99-]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[list\\r-4\\n]",
+        "eval.tests.test_remote_server_protocol.test_remote_word_splitting[send-]",
+        "eval.tests.test_remote_server_protocol.test_second_server_cannot_bind_and_exits_zero",
+        "eval.tests.test_remote_server_protocol.test_server_broadcast_to_dead_connection_reports_write_error",
+        "eval.tests.test_remote_server_protocol.test_server_creates_socket_with_owner_only_permissions",
+        "eval.tests.test_remote_server_protocol.test_server_log_file_receives_the_same_messages",
+        "eval.tests.test_remote_server_protocol.test_server_with_missing_runtime_dir_logs_bind_error",
+        "eval.tests.test_remote_server_protocol.test_server_writes_banner_and_logs_to_stderr",
+        "eval.tests.test_remote_unicode_word_splitting.test_a_run_of_mixed_unicode_whitespace_collapses",
+        "eval.tests.test_remote_unicode_word_splitting.test_broadcast_payload_keeps_interior_spacing_after_unicode_separators",
+        "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_leading_unicode_whitespace_is_trimmed_from_the_request[vertical-tab]",
+        "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[cjk-inside]",
+        "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[cjk-only]",
+        "eval.tests.test_remote_unicode_word_splitting.test_multibyte_runes_pass_through_the_word_unchanged[latin-1-supplement]",
+        "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_request_of_only_unicode_whitespace_has_an_empty_word[vertical-tab]",
+        "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_trailing_unicode_whitespace_lets_the_command_run[vertical-tab]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[drop-listen: drop: client ID must be a number\\n-vertical-tab]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_separator_yields_the_same_diagnostic_as_a_space[query-listen: query: client ID must be a number\\n-vertical-tab]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[form-feed]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[next-line]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[no-break-space]",
+        "eval.tests.test_remote_unicode_word_splitting.test_unicode_whitespace_splits_a_word_from_within[vertical-tab]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[0x10]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[1.5]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_beyond_int64_are_rejected[9223372036854775808]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[+5-5]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[-5--5]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[0-0]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[007-7]",
+        "eval.tests.test_server_protocol_edges.test_conn_id_spellings_register_equivalently[9223372036854775807-9223372036854775807]",
+        "eval.tests.test_server_protocol_edges.test_duplicate_registration_routes_to_the_newest_connection",
+        "eval.tests.test_server_protocol_edges.test_oversized_request_line_resets_the_connection[65536]",
+        "eval.tests.test_server_protocol_edges.test_oversized_request_line_resets_the_connection[70000]",
+        "eval.tests.test_server_protocol_edges.test_query_response_may_end_with_eof_instead_of_a_blank_line",
+        "eval.tests.test_server_protocol_edges.test_query_response_stops_at_the_first_blank_line",
+        "eval.tests.test_server_protocol_edges.test_query_to_a_vanished_client_keeps_it_registered",
+        "eval.tests.test_server_protocol_edges.test_query_with_an_immediately_blank_response_prints_nothing",
+        "eval.tests.test_server_protocol_edges.test_query_without_a_key_sends_a_bare_query_line",
+        "eval.tests.test_server_protocol_edges.test_quit_force_with_a_vanished_client_still_exits",
+        "eval.tests.test_server_protocol_edges.test_quit_pings_live_clients_and_drops_the_dead_ones",
+        "eval.tests.test_server_protocol_edges.test_quit_with_only_a_vanished_client_exits_the_server",
+        "eval.tests.test_server_protocol_edges.test_request_line_at_the_scanner_limit_is_answered",
+        "eval.tests.test_server_protocol_edges.test_send_to_a_negative_client_id_delivers",
+        "eval.tests.test_server_protocol_edges.test_send_to_a_vanished_client_keeps_it_registered",
+        "eval.tests.test_server_protocol_edges.test_server_log_in_a_missing_directory_is_fatal",
+        "eval.tests.test_server_protocol_edges.test_trailing_newline_appends_an_empty_request",
+        "eval.tests.test_server_protocol_edges.test_whitespace_only_requests_are_unexpected_commands[ ]",
+        "eval.tests.test_server_protocol_edges.test_whitespace_only_requests_are_unexpected_commands[\\t]",
+        "eval.tests.test_server_query_failures.test_broadcast_with_no_registered_clients_is_silent",
+        "eval.tests.test_server_query_failures.test_query_response_aborted_by_the_client_keeps_the_id_registered",
+        "eval.tests.test_server_query_failures.test_query_response_with_an_oversized_line_reports_the_scanner_error",
+        "eval.tests.test_server_query_failures.test_query_to_a_requester_that_vanishes_logs_forwarding_errors",
+        "eval.tests.test_server_spawn_failures.test_argv0_without_exec_bit_reports_permission_denied",
+        "eval.tests.test_server_spawn_failures.test_single_mode_never_spawns_a_server_for_a_bad_argv0",
+        "eval.tests.test_server_spawn_failures.test_spawn_failure_is_not_retried_while_the_client_runs",
+        "eval.tests.test_server_spawn_failures.test_starting_server_error_is_not_written_to_the_client_log",
+        "eval.tests.test_server_spawn_failures.test_unrunnable_argv0_logs_starting_server_and_is_not_fatal[/nonexistent/lf-xyz-starting server: fork/exec /nonexistent/lf-xyz: no such file or directory\\\\n]",
+        "eval.tests.test_server_spawn_failures.test_unrunnable_argv0_logs_starting_server_and_is_not_fatal[lf-nonexistent-starting server: exec: \"lf-nonexistent\": executable file not found in \\\\$PATH\\\\n]",
+        "eval.tests.test_socket_runtime_paths.test_fallback_dir_owned_by_another_user_is_fatal",
+        "eval.tests.test_socket_runtime_paths.test_remote_against_a_non_socket_at_the_socket_path[directory]",
+        "eval.tests.test_socket_runtime_paths.test_remote_against_a_non_socket_at_the_socket_path[file]",
+        "eval.tests.test_socket_runtime_paths.test_socket_falls_back_to_a_per_user_tmpdir",
+        "eval.tests.test_socket_runtime_paths.test_socket_path_held_by_a_nonempty_directory_is_reported",
+        "eval.tests.test_socket_runtime_paths.test_socket_path_held_by_an_empty_directory_is_replaced",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args0]",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args1]",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args2]",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args3]",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args4]",
+        "eval.tests.test_socket_runtime_paths.test_tmpdir_pointing_at_a_file_is_fatal_before_any_mode[args5]",
+        "eval.tests.test_user_database_fallback.test_missing_home_variable_panics_before_any_mode_runs[mode0]",
+        "eval.tests.test_user_database_fallback.test_missing_home_variable_panics_before_any_mode_runs[mode1]",
+        "eval.tests.test_user_database_fallback.test_missing_home_variable_panics_before_any_mode_runs[mode2]",
+        "eval.tests.test_user_database_fallback.test_missing_user_variable_panics_before_any_mode_runs[mode0]",
+        "eval.tests.test_user_database_fallback.test_missing_user_variable_panics_before_any_mode_runs[mode1]",
+        "eval.tests.test_user_database_fallback.test_missing_user_variable_panics_before_any_mode_runs[mode2]",
+        "eval.tests.test_user_database_fallback.test_server_with_a_usable_home_directory_starts_cleanly",
+        "eval.tests.test_user_database_fallback.test_server_with_an_unusable_home_directory_still_serves[homefile-not a directory]",
+        "eval.tests.test_user_database_fallback.test_server_with_an_unusable_home_directory_still_serves[missing-home-no such file or directory]"
+      ]
+    }
+  },
+  "commit": "664d7c88e1c2",
+  "data_source": "program-pipeline-synthesis",
+  "difficulty": "medium",
+  "difficulty_score": 2.9333,
+  "eval_clean_hashes": [],
+  "input_record": {},
+  "instance_id": "gokcehan__lf.664d7c8",
+  "language": "go",
+  "module_iterations": {
+    "cli_flags_and_output": 5,
+    "server_and_remote": 2,
+    "config_files_and_options": 5,
+    "command_language_and_shell": 5,
+    "navigation_and_file_ops": 5,
+    "ui_and_keybinding": 5,
+    "test_reuse": 5
+  },
+  "repository": "gokcehan/lf"
+}

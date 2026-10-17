@@ -20,6 +20,12 @@ whether the reproduction is behaviorally identical.
 | `benhoyt--goawk.5b11959` | [benhoyt/goawk](https://github.com/benhoyt/goawk) @ 5b11959 | Go | 2,144 | 7 | medium | **reward 1.0** |
 | `itchyny--gojq.2bef47f` | [itchyny/gojq](https://github.com/itchyny/gojq) @ 2bef47f | Go | 2,757 | 7 | medium | **reward 1.0** |
 | `knqyf263--pet.3661dc9` | [knqyf263/pet](https://github.com/knqyf263/pet) @ 3661dc9 | Go | 885 | 7 | medium | **reward 1.0** |
+| `mvdan--gofumpt.361d571` | [mvdan/gofumpt](https://github.com/mvdan/gofumpt) @ 361d571 | Go | 1,341 | 7 | medium | **reward 1.0** |
+| `twpayne--chezmoi.40dcf24` | [twpayne/chezmoi](https://github.com/twpayne/chezmoi) @ 40dcf24 | Go | 1,930 | 8+1 | hard | **reward 1.0** |
+| `wader--fq.19f3e2d` | [wader/fq](https://github.com/wader/fq) @ 19f3e2d | Go | 2,040 | 7 | medium | **reward 1.0** |
+| `TomWright--dasel.069166f` | [TomWright/dasel](https://github.com/TomWright/dasel) @ 6e58c94 | Go | 2,484 | 7 | medium | **reward 1.0** |
+| `tdewolff--minify.1765945` | [tdewolff/minify](https://github.com/tdewolff/minify) @ c50e9ac | Go | 3,473 | 7 | medium | **reward 1.0** |
+| `gokcehan--lf.664d7c8` | [gokcehan/lf](https://github.com/gokcehan/lf) @ 664d7c8 | Go | 1,104 | 7 | medium | **reward 1.0** |
 
 Disjointness: tasks are verified against both ProgramBench-200 and the
 ProgramGym-1648 release (1,848 owner/repo pairs) — no overlap.
